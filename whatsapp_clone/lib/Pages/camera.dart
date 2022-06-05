@@ -12,7 +12,9 @@ class _CameraPageState extends State<CameraPage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-floatingActionButton: FloatingActionButton(onPressed:(){},
+floatingActionButton: FloatingActionButton(onPressed:(){
+  
+},
 child: Icon(Icons.camera_alt),),      
     );
   }

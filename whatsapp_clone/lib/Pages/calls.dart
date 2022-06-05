@@ -13,8 +13,8 @@ class _CallsPageState extends State<CallsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: (){},
-      child:Icon(Icons.call)),
-      
+      child:Icon(Icons.call
+      ))
     );
   }
 }
