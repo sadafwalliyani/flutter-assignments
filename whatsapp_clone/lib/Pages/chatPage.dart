@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/CustomCard.dart';
-import 'package:whatsapp_clone/chattextWdget.dart';
-import '../CustomCard.dart';
-import '../chattextWdget.dart';
+import 'package:whatsapp_clone/Widgets/CustomCard.dart';
+import 'package:whatsapp_clone/Widgets/chattextWdget.dart';
+import '../Widgets/CustomCard.dart';
+import '../Widgets/chattextWdget.dart';
 
 class ChatPage extends StatefulWidget {
   const ChatPage({ Key? key }) : super(key: key);

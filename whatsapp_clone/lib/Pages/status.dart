@@ -12,7 +12,7 @@ class _StatusPageState extends State<StatusPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: (){},
-     child: Icon(Icons.camera_alt ),),
+     child: Icon(Icons.camera_alt_rounded ),),
      
       
     );

@@ -3,7 +3,8 @@ import 'package:whatsapp_clone/Pages/calls.dart';
 import 'package:whatsapp_clone/Pages/camera.dart';
 import 'package:whatsapp_clone/Pages/chatPage.dart';
 import 'package:whatsapp_clone/Pages/status.dart';
-import 'package:whatsapp_clone/popupWidget.dart';
+
+import '../Widgets/popupWidget.dart';
 
 
 class Homescreen extends StatefulWidget {
