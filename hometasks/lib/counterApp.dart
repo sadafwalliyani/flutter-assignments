@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:navigateetc/constants/app_text.dart';
+import 'package:navigateetc/constant/app_text.dart';
 
 
 
@@ -36,7 +36,7 @@ class _CounterAppState extends State<CounterApp> {
               onPressed: () {
                 addValue();
               },
-              child: Text("AppTextConstant.appTitle"),
+              child: Text(AppTextConstant.appTitle),
             ),
           )
         ],
