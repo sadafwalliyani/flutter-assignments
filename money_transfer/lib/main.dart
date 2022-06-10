@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_transfer/Pages/Home.dart';
+import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'Pages/Open.dart';
 
 void main() {
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily:'RussoOne',
+        
+      ),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Open(),
     );
   }
 }

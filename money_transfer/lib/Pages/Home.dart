@@ -38,18 +38,18 @@ class _HomeState extends State<Home>with SingleTickerProviderStateMixin {
             controller: _controller,
             indicatorColor: Colors.white,
             tabs: [
-              Tab(               text: "Home",         ),
-              Tab(                text: "Balance",              ),
-              Tab(                text: "Offer",              ),
-              Tab(                text: "Rewards",              ),
+              Tab(text:"Home",),
+              Tab(text:"Balance",),
+              Tab(text:"Offer",),
+              Tab(text:"Rewards",),
             ]),
       ),
-      body: TabBarView(controller: _controller, children: [
-        Home(),
-        Balance(),
-        Offer(),
-        Rewards(),
-      ]),
+      // body: TabBarView(controller: _controller, children: [
+      //   Home(),
+      //   Balance(),
+      //   Offer(),
+      //   Rewards(),
+      // ]),
     );
   }
 }
