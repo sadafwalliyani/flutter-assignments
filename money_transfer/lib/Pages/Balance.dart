@@ -12,6 +12,8 @@ class _BalanceState extends State<Balance> {
   Widget build(BuildContext context) {
     return Scaffold(
       
+      body:Container(),
+      
     );
   }
 }

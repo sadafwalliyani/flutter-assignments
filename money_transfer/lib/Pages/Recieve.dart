@@ -12,6 +12,7 @@ class _RecieveState extends State<Recieve> {
   Widget build(BuildContext context) {
     return Scaffold(
       
+      
     );
   }
 }
