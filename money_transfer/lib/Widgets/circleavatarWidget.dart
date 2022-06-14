@@ -5,10 +5,12 @@ Widget circleavatarWidget(img){
   return(
     CircleAvatar(
               radius: 55,
-              backgroundColor: Color(0xffFDCF09),
+              backgroundColor: Colors.grey,
               child: CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage(img),
+                backgroundImage: 
+                
+                AssetImage(img),
               ),
             )
   );

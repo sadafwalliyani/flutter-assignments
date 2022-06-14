@@ -4,16 +4,14 @@ import 'package:flutter/material.dart';
 Widget elevatedBttonWidget(colorr,textt,iconn) {
   return
   ElevatedButton.icon(
-  onPressed: () {},
-  icon: Icon( // <-- Icon
-    iconn,
-    size: 30.0,
-    
-              ),
-              
+  onPressed: () {},  
+   icon:ImageIcon(iconn,
+   size:40,
+   ),
+            
       
   label: Text(textt,
-  style: TextStyle(fontFamily:'Play',fontSize: 10,fontWeight: FontWeight.w400),),
+  style: TextStyle(fontFamily:'Play',fontSize: 12,fontWeight: FontWeight.w400),),
   style: ElevatedButton.styleFrom(
         primary: colorr,
         fixedSize: Size(150, 45),
@@ -21,7 +19,7 @@ Widget elevatedBttonWidget(colorr,textt,iconn) {
           borderRadius: BorderRadius.circular(8),
           
         ),
-));
+  ));
 
 
 
