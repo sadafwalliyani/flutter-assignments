@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:money_transfer/Pages/splashScreen.dart';
+import 'package:money_transfer/Pages/Tabbar.dart';
 void main(){
   runApp(MyApp());
 }

@@ -12,7 +12,7 @@ class _BalanceState extends State<Balance> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      body:Container(),
+      backgroundColor: Color(0xff683ab6),
       
     );
   }

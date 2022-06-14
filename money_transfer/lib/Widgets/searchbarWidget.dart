@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 Widget searchbarWidget(searchbar) {
   return (Container(
-      width: 200,
+      width: 180,
      
       // color: Color.fromARGB(255, 254, 254, 255),
       child: TextField(

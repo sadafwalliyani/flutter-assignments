@@ -1,24 +1,29 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget elevatedBttonWidget(elevatedbuttonwidget) {
-  return Column(children: [
-    (ElevatedButton(
-      onPressed: () {},
-      child: Text(
-        "Scan QR Code",
-        style: TextStyle(
-            fontFamily: 'Play', fontSize: 16, fontWeight: FontWeight.w100),
-      ),
-      style: ElevatedButton.styleFrom(
-        primary: Color(0xff5B2E62),
+Widget elevatedBttonWidget(colorr,textt,iconn) {
+  return
+  ElevatedButton.icon(
+  onPressed: () {},
+  icon: Icon( // <-- Icon
+    iconn,
+    size: 30.0,
+    
+              ),
+              
+      
+  label: Text(textt,
+  style: TextStyle(fontFamily:'Play',fontSize: 10,fontWeight: FontWeight.w400),),
+  style: ElevatedButton.styleFrom(
+        primary: colorr,
         fixedSize: Size(150, 45),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
+          
         ),
-      ),
-    )
-  ),
-  ]);
+));
+
+
+
 }
 

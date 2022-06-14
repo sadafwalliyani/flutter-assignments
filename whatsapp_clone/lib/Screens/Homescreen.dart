@@ -46,7 +46,8 @@ CameraPage(),
 ChatPage(),
 StatusPage(),
 CallsPage(),
-      ]),);
+      ]),
+      );
        
   }
 }

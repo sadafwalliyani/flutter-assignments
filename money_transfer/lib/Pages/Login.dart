@@ -5,6 +5,8 @@ import 'package:money_transfer/Widgets/textfieldWidget.dart';
 
 import '../Constant/app_colors.dart';
 import 'Home.dart';
+import 'TabBar.dart';
+
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -70,7 +72,7 @@ class _LoginState extends State<Login> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Home()));
+                          MaterialPageRoute(builder: (context) => TabBarrr()));
                     },
                     child: Text(
                       'Verify',
