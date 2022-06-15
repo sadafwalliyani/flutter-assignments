@@ -13,6 +13,7 @@ Widget iconbuttonWidget(iconns){
             ),
   child: IconButton(onPressed: (){}, icon: 
   ImageIcon(iconns,
+  color: Color(0xffFA4D96),
    size:50,)
         
 

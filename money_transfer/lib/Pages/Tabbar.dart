@@ -36,10 +36,11 @@ class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin 
             child: 
             CircleAvatar(
               radius: 22,
-              backgroundColor: Colors.grey,
+              backgroundColor: Color(0xff343645),
               child: CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage('assests/frozen.jpg'),
+                radius: 21,
+                backgroundImage: AssetImage('assests/frozen.jpg',
+                ),
               ),
             ),
                   ),
@@ -48,10 +49,15 @@ class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin 
                 Padding(
             padding: EdgeInsets.all(2),
             child: CircleAvatar(
+               backgroundColor: Color(0xff343645),
               radius: 22,
-              backgroundColor: Colors.grey,
-                           child: Icon(Icons.notifications_active_rounded),
-            ),
+child: CircleAvatar(
+   backgroundColor: Color(0xff343645),
+                radius: 19,
+             backgroundImage: AssetImage('assests/Group 880.png',),
+                ),
+              ),
+              
           ),
         ],
         bottom: TabBar(

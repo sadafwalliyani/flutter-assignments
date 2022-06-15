@@ -26,16 +26,15 @@ class Home extends StatelessWidget {
               height: 2,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          elevatedBttonWidget(Color(0xff5B2E62), "Scan QR Code",  AssetImage('assests/bus-1.png'),),
-          elevatedBttonWidget(Color(0xff2E624C), "Send to Contact",  AssetImage('assests/bus-1.png'),),         
+          elevatedBttonWidget(Color(0xff5B2E62), "Scan QR Code",  AssetImage('assests/Scanner.png'),),
+          elevatedBttonWidget(Color(0xff2E624C), "Send to Contact",  AssetImage('assests/contactuser.png'),),         
             ]),
             SizedBox(
               height: 2,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              elevatedBttonWidget(Color(0xff5E622E), "Send To Bank",  AssetImage('assests/bus-1.png'),),
-          
-          elevatedBttonWidget(Color(0xff622E3A), "SelfTransfer",  AssetImage('assests/bus-1.png'),), 
+              elevatedBttonWidget(Color(0xff5E622E), "Send To Bank",  AssetImage('assests/bank.png'),),          
+          elevatedBttonWidget(Color(0xff622E3A), "SelfTransfer",  AssetImage('assests/Swap.png'),), 
             ]),
             SizedBox(
               height: 2,
@@ -43,8 +42,8 @@ class Home extends StatelessWidget {
             textWidget('Recharge & Bill Payments'),
             SizedBox(height: 5,),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-            elevatedBttonWidget(Color(0xff32652A), "MobileRecharge",  AssetImage('assests/bus-1.png'),),
-          elevatedBttonWidget(Color(0xff652A5F), "Electricity Bill",  AssetImage('assests/bus-1.png'),),         
+            elevatedBttonWidget(Color(0xff32652A), "MobileRecharge",  AssetImage('assests/Iphone.png'),),
+          elevatedBttonWidget(Color(0xff652A5F), "Electricity Bill",  AssetImage('assests/Light Mode.png'),),         
             ]),
             SizedBox(
               height: 2,
@@ -52,8 +51,8 @@ class Home extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-               elevatedBttonWidget(Color(0xff652A2A), "DTH Recharge",  AssetImage('assests/bus-1.png'),),
-                      elevatedBttonWidget(Color(0xff2A4065), "Postpaid bill",  AssetImage('assests/bus-1.png'),),         
+               elevatedBttonWidget(Color(0xff652A2A), "DTH Recharge",  AssetImage('assests/Play.png'),),
+                      elevatedBttonWidget(Color(0xff2A4065), "Postpaid bill",  AssetImage('assests/receipt-minus.png'),),         
               ]),
             ),
             SizedBox(
@@ -61,40 +60,27 @@ class Home extends StatelessWidget {
             ),
             textWidget('Ticket Booking'),
             SizedBox(height: 5,),
-           SingleChildScrollView(
-             child: Column(
-               children:[
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  
-                  child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                   iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                        iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                        iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                        iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                        iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                        
-                  ]),
-                ),
-           
-               ] 
-             ),
-           ),
+           Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+      iconbuttonWidget(AssetImage('assests/video-play.png'),),
+             iconbuttonWidget(AssetImage('assests/bus.png'),),
+             iconbuttonWidget(AssetImage('assests/bus-1.png'),),
+             iconbuttonWidget(AssetImage('assests/airplane.png'),),
+             iconbuttonWidget(AssetImage('assests/smart-car-1.png'),),
+           ]),
             SizedBox(
               height: 5,
             ),
             textWidget('More Services'),
             SizedBox(height: 5,),
-             SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-               iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                    iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                    iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                    iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                    iconbuttonWidget(AssetImage('assests/bus-1.png'),),
-                    
-              ]),),
+
+             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+             children: [
+              iconbuttonWidget(AssetImage('assests/frame.png'),),
+                   iconbuttonWidget(AssetImage('assests/group.png'),),
+                   iconbuttonWidget(AssetImage('assests/Heart.png'),),
+                   iconbuttonWidget(AssetImage('assests/smart-car.png'),),    
+                   
+             ]),
             SizedBox(
               height: 2,
             ),
@@ -102,14 +88,14 @@ class Home extends StatelessWidget {
             SizedBox(height: 5,),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              CircleAvatar(
-                radius: 35,
-              child: CircleAvatar(
-                radius: 30,
-                backgroundImage:                       
-                AssetImage('assests/image1.jpg'),)
-              )
+              child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+              children: [
+             circleavatarWidget('assests/image1.jpg'),
+             circleavatarWidget('assests/dp 3.jpg'),
+             circleavatarWidget('assests/image 9.jpg'),
+             circleavatarWidget('assests/image 11.jpg'),
+              circleavatarWidget('assests/image 4.jpg'),
 
               
               ]),
