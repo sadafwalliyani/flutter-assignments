@@ -11,6 +11,7 @@ Widget elevatedBttonWidget(colorr,textt,iconn) {
             
       
   label: Text(textt,
+  maxLines:1,
   style: TextStyle(fontFamily:'Play',fontSize: 12,fontWeight: FontWeight.w400),),
   style: ElevatedButton.styleFrom(
         primary: colorr,

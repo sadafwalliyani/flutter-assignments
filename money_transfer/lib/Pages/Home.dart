@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-               elevatedBttonWidget(Color(0xff652A2A), "DTH Recharge",  AssetImage('assests/Play.png'),),
+               elevatedBttonWidget(Color(0xff652A2A), "DTHRecharge",  AssetImage('assests/Play.png'),),
                       elevatedBttonWidget(Color(0xff2A4065), "Postpaid bill",  AssetImage('assests/receipt-minus.png'),),         
               ]),
             ),
