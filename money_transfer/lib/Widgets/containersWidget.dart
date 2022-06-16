@@ -3,9 +3,9 @@ import 'package:flutter/cupertino.dart';
 Widget containerWidget(colorr,text1,text2,text3) {
   return (Container(
     height: 99,
-    width: 130,
+    width: 140,
     child: Padding(
-      padding: EdgeInsets.all(12),
+      padding: EdgeInsets.all(13),
       child:Column(
         children: [
         Text(text1,
@@ -13,7 +13,7 @@ Widget containerWidget(colorr,text1,text2,text3) {
                   
                       style: TextStyle(
                         color: Color(0xffFFFFFF),
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1,
                         fontFamily: 'Play',

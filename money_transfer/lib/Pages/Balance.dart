@@ -83,24 +83,29 @@ class _BalanceState extends State<Balance> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                      Row(
-                      //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                    children: [
-                    containerWidget(0xff652A5F, "States Bank", "1142524899652",
-                        "16,456.05"),
-                    containerWidget(0xff652A5F, "States Bank", "1142524899652",
-                        "16,456.05"),
+                                    containerWidget(0xff652A5F,"Federel Bank", "1142524899652","16,456.05"),
+                                    containerWidget(0xff442A65, "States Bank", "1142524899652","2045.05"),
                   ],
                 ),
-                // SizedBox(
-                //   height: 8,
-                // ),
+                SizedBox(
+                  height: 4,
+                ),
                 Row(        
-                  //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,              
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,              
                       children: [
-                        containerWidget(0xff2A6550, "Best Bank",
-                            "1142521547852", "35873.5"),
-                             containerWidget(0xff2A6550, "Best Bank",
-                            "1142521547852", "35873.5"),
+        containerWidget(0xff2A6550, "Best Bank","1142521547852", "35873.5"),
+        Container(
+              height: 99,
+    width: 140,
+    
+    child:
+    
+    Align
+    (
+      alignment: Alignment.bottomRight,
+      child: Image(image: AssetImage('assests/Vector.png',),))),                        
                       ],
                     )
 
@@ -108,7 +113,7 @@ class _BalanceState extends State<Balance> {
                 ),
                
                             SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 Container(
                   height: 40,
