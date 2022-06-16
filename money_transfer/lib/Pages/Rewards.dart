@@ -153,9 +153,9 @@ height: 101,
             textWidget("Collect Rewards"),
             Column(         
               children: [
-                offercontainerWidget(0xff242042, "Flat 50 off On food Delivery", "On orders above 99 on Swaggy, Somato", "Collect Now"),
+                offercontainerWidget(0xff242042, 'assests/Vector-3.png',"Flat 50 off On food Delivery", "On orders above 99 on Swaggy, Somato", "Collect Now"),
             SizedBox(height: 5,),
-           offercontainerWidget(0xff422038, "20% Cashback On Amason", "Up to Rs 150 Minimum Order 1000", "Collect Now"),
+           offercontainerWidget(0xff422038,'assests/image19.png', "20% Cashback On Amason", "Up to Rs 150 Minimum Order 1000", "Collect Now"),
                 
             ],
             )
