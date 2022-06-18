@@ -17,7 +17,7 @@ class CustomCard extends StatelessWidget {
             fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
-        ),
+        ),e:\Flutter assignments\whatsapp_clone\lib\Widgets\CustomCard.dart
         subtitle: Row(
           children: [
             Icon(Icons.done_all, color: Colors.blue),

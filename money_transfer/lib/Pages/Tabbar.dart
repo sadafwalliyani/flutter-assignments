@@ -3,6 +3,7 @@ import 'package:money_transfer/Constant/app_colors.dart';
 import 'package:money_transfer/Pages/Balance.dart';
 import 'package:money_transfer/Pages/Home.dart';
 import 'package:money_transfer/Pages/Notification.dart';
+import 'package:money_transfer/Pages/Profile.dart';
 
 import 'package:money_transfer/Pages/Rewards.dart';
 import 'package:money_transfer/Widgets/searchbarWidget.dart';
@@ -10,13 +11,14 @@ import 'package:money_transfer/Widgets/searchbarWidget.dart';
 import 'Offer.dart';
 
 class TabBarrr extends StatefulWidget {
-  const TabBarrr({ Key? key }) : super(key: key);
+  const TabBarrr({Key? key}) : super(key: key);
 
   @override
   State<TabBarrr> createState() => _TabBarrrState();
 }
 
-class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin {
+class _TabBarrrState extends State<TabBarrr>
+    with SingleTickerProviderStateMixin {
   late TabController _controller;
   @override
   void initState() {
@@ -25,7 +27,9 @@ class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin 
       length: 4,
       vsync: this,
       initialIndex: 0,
-    );}
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,43 +37,52 @@ class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin 
         backgroundColor: Color(AppColorContant.screenColor),
         actions: [
           Padding(
-            padding: EdgeInsets.all(2),
-            child: 
-            CircleAvatar(
-              radius: 22,
-              backgroundColor: Color(0xff343645),
+              padding: EdgeInsets.all(2),
               child: CircleAvatar(
-                radius: 21,
-                backgroundImage: AssetImage('assests/frozen.jpg',
-                ),
-              ),
-            ),
-                  ),
-          Padding(padding: EdgeInsets.all(2),
-          child: searchbarWidget('searchbar'),),
-                Padding(
+                  radius:22,
+                   backgroundColor: Color(0xff343645),
+                                    child: IconButton(
+                        icon: Image.asset('assests/Frozen.png',
+                        ),
+                         iconSize: 22,
+                                  onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => profiile()));
+                        },
+                                    ))),
+          Padding(
+            padding: EdgeInsets.all(2),
+            child: searchbarWidget('searchbar'),
+          ),
+          Padding(
             padding: EdgeInsets.all(2),
             child: CircleAvatar(
-               backgroundColor: Color(0xff343645),
+              backgroundColor: Color(0xff343645),
               radius: 22,
-child: Stack(
-  children:[   CircleAvatar(
-  
-     backgroundColor: Color(0xff343645),
-  
+              child: Stack(children: [
+                CircleAvatar(
+                  backgroundColor: Color(0xff343645),
                   radius: 19,
-  
-               backgroundImage: AssetImage('assests/Group 880.png',),
-               child: IconButton(onPressed: (){
-                Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Notificationss()));     
-               }, icon: Icon(Icons.abc,
-               color: Color(0xff343645),),
-  
-                 ),
-            )]),
-              ),
-              
+                  backgroundImage: AssetImage(
+                    'assests/Group 880.png',
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Notificationss()));
+                    },
+                    icon: Icon(
+                      Icons.abc,
+                      color: Color(0xff343645),
+                    ),
+                  ),
+                )
+              ]),
+            ),
           ),
         ],
         bottom: TabBar(
@@ -90,18 +103,14 @@ child: Stack(
               ),
             ]),
       ),
-      
-      body:  
-      Container(
-        child: TabBarView(
-           controller:_controller,
-          children: [
-        Home(),
-        Balance(),
-        Offer(),
-        Rewards(),
+      body: Container(
+        child: TabBarView(controller: _controller, children: [
+          Home(),
+          Balance(),
+          Offer(),
+          Rewards(),
         ]),
       ),
-      );
-         }
+    );
+  }
 }
