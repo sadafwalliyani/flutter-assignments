@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:money_transfer/Constant/app_colors.dart';
 import 'package:money_transfer/Pages/Tabbar.dart';
@@ -29,49 +27,66 @@ class _profiileState extends State<profiile> {
                     color: Color(0xff1F222A),
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
-                  child: 
-                  Row(
+                  child: Row(
                     children: [
-                    circleavatarWidget('assests/Frozen.png'),           
-                    
-                    Container(
-                      height: 50,
-                      width: 150,
-                      child: Column( 
-                        
+                      circleavatarWidget('assests/Frozen.png'),
+                      Container(
+                        height: 60,
+                        width: 180,
+                        child: Column(
                           children: [
-                          Text('Elsa',                        
-                          style:TextStyle(fontSize: 20,
-                          fontWeight: FontWeight.bold,fontFamily: 
-                          'Russo-One',color: Colors.white)),
-                          Text("Level 4 Ace Member",                        
-                          style:TextStyle(fontSize: 13,
-                          fontWeight: FontWeight.bold,fontFamily: 
-                          'Russo-One',color: Color(0xffB0BEC5))),
-                          Image(
-          image: AssetImage(
-        'assests/Rectangle 28.png'),
-        color: Color(0xff4D5DFA),),
-                        ],
+                             Row(
+                              children: [
+                                SizedBox(width: 12,),
+                                Text('Elsa',
+                                    style: TextStyle(
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'Russo-One',
+                                        color: Colors.white)),
+                                        SizedBox(width: 20,),
+                                Image(
+                                    image: AssetImage('assests/Group 751.png')),
+                              ],
+                            ),
+                            Text("Level 4 Ace Member",
+                                style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Russo-One',
+                                    color: Color(0xffB0BEC5))),
+                            Row(
+                              children:[ Image(
+                                image: AssetImage('assests/Rectangle 28.png'),
+                                color: Color(0xff4D5DFA),
+                                     ),
+                                SizedBox(width: 10,),      
+                                     Image(
+                                image: AssetImage('assests/Lv 5.png'),
+                                color: Color(0xff4D5DFA),)],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-
-                    
- IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => TabBarrr()));
-                        },
-                        icon: Icon(
-                          Icons.close_rounded,
-                          color: Color(0xffFfffff),
-                        )),
-                  ],
-                    
-                  )),
+                      IconButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TabBarrr()));
+                          },
+                          icon: Icon(
+                            Icons.close_rounded,
+                            color: Color(0xffFfffff),
+                          )),
+                                  
+                    ],
+                  ),
+                  
+                  
+                  ),
             ),
+
             SizedBox(
               height: 10,
             ),

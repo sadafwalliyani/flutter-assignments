@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:money_transfer/Constant/app_colors.dart';
 import 'package:money_transfer/Pages/Tabbar.dart';
+import 'package:money_transfer/Widgets/textnotiwidget.dart';
 
 class Notificationss extends StatefulWidget {
   const Notificationss({Key? key}) : super(key: key);
@@ -14,14 +15,15 @@ class _NotificationssState extends State<Notificationss> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(AppColorContant.screenColor),
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.only(
-            top: 20,
-          ),
-          child: Column(
+      body: Padding(
+        padding: EdgeInsets.only(
+          top: 20,
+        ),
+        child: SingleChildScrollView(
+          child: Column(            
             children: [
               Container(
+                
                   child: Padding(
                 padding: EdgeInsets.all(10),
                 child: Row(
@@ -51,6 +53,18 @@ class _NotificationssState extends State<Notificationss> {
                   ],
                 ),
               )),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  textnotiWidget('Recharge Completed', 'Your last recharge on 9847229989 of 199 rs has been succesfully completed.', 
+                  'May 20  - 12:32 Pm'),
+                  SizedBox(height: 10,),
+                  textnotiWidget('Money Recived', 'Your account ***21445 has been recieved an amount of Rs 1000 using upi transaction.', 
+                  'May 20  - 12:45 Pm'),   SizedBox(height: 10,),
+                  textnotiWidget('Offer Unlocked', 'You have an unlockd offer avilable go to offer section or tap to view the offer.', 
+                  'May 20  - 2:45 Pm'),   SizedBox(height: 10,),
+                ],
+              ),
               Container(
                   child: Padding(
                 padding: EdgeInsets.all(10),
@@ -68,7 +82,7 @@ class _NotificationssState extends State<Notificationss> {
                       ),
                     ),
                     IconButton(
-                      icon: Image.asset('assests/image-44.jpg'),
+                      icon: Image.asset('assests/image-44.png'),
                       iconSize: 20,
                       onPressed: () {},
                     )
