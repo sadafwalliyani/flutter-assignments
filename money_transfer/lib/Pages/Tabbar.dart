@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:money_transfer/Constant/app_colors.dart';
 import 'package:money_transfer/Pages/Balance.dart';
 import 'package:money_transfer/Pages/Home.dart';
+import 'package:money_transfer/Pages/Notification.dart';
 
 import 'package:money_transfer/Pages/Rewards.dart';
 import 'package:money_transfer/Widgets/searchbarWidget.dart';
@@ -51,11 +52,22 @@ class _TabBarrrState extends State<TabBarrr>with SingleTickerProviderStateMixin 
             child: CircleAvatar(
                backgroundColor: Color(0xff343645),
               radius: 22,
-child: CircleAvatar(
-   backgroundColor: Color(0xff343645),
-                radius: 19,
-             backgroundImage: AssetImage('assests/Group 880.png',),
-                ),
+child: Stack(
+  children:[   CircleAvatar(
+  
+     backgroundColor: Color(0xff343645),
+  
+                  radius: 19,
+  
+               backgroundImage: AssetImage('assests/Group 880.png',),
+               child: IconButton(onPressed: (){
+                Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Notificationss()));     
+               }, icon: Icon(Icons.abc,
+               color: Color(0xff343645),),
+  
+                 ),
+            )]),
               ),
               
           ),

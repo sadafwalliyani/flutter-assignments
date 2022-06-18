@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:money_transfer/Pages/Recieve.dart';
 import 'package:money_transfer/Pages/splashScreen.dart';
 import 'package:money_transfer/Pages/Tabbar.dart';
 void main(){
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       
-home: SplashScreen(),      
+home:SplashScreen(),      
     );
   }
 }

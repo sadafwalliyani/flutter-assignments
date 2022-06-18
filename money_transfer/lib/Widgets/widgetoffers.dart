@@ -20,7 +20,7 @@ Widget offerWidget(colorr, png, text1, text2, text3) {
                   child: Container(
                     child: Image(
                       image: AssetImage(
-                        png,
+                       'assests/Vector-3.png',
                       ),
                     ),
                   ),
@@ -28,12 +28,12 @@ Widget offerWidget(colorr, png, text1, text2, text3) {
                 Padding(
                   padding: EdgeInsets.only(
                     top: 10,
-                    left: 20,
+                    left: 9,
                   ),
                   child: Container(
                     child: Image(
                       image: AssetImage(
-                        'assests/image 16.png',
+                        png,
                       ),
                     ),
                   ),
@@ -41,12 +41,12 @@ Widget offerWidget(colorr, png, text1, text2, text3) {
               ],
             )),
         Padding(
-            padding: EdgeInsets.only(top: 5),
+            padding: EdgeInsets.only(top:5),
             child: Container(
                 height: 90,
                 width: 210,
                 child: Align(
-                  alignment: Alignment.topLeft,
+                  //  alignment: Alignment.topLeft,
                   child: SingleChildScrollView(
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -95,7 +95,11 @@ Widget offerWidget(colorr, png, text1, text2, text3) {
 
                         ]),
                   ),
-                )))
+                )
+                )
+                ),
+                
+          
       ],
     ),
   ));

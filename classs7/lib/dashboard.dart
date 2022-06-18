@@ -38,8 +38,7 @@ class _DashboardState extends State<Dashboard> {
               child: Text("Add"),
             ),
             Container(
-              height: 400,
-              child: ListView.builder(
+              height: 400,              child: ListView.builder(
                 itemCount: chatNames.length,
                 itemBuilder: (context, index) {
                   return ListTile(
