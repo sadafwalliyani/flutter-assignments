@@ -1,3 +1,5 @@
+import 'package:assignment_7/bottomNav.dart';
+import 'package:assignment_7/drawer.dart';
 import 'package:assignment_7/tabbar.dart';
 import 'package:assignment_7/todo.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
      return MaterialApp(
       debugShowCheckedModeBanner: false,
       
-home:TabBarrr(),      
+home:bottomNav(),      
     );
   }
 }
