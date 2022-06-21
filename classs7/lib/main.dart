@@ -1,4 +1,5 @@
-import 'package:classs5/dashboard.dart';
+import 'package:classs5/bg.dart';
+import 'package:classs5/todoApp.dart';
 
 import 'package:flutter/material.dart';
 
@@ -12,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
+    
       debugShowCheckedModeBanner: false,
-      home: Dashboard(),
+      home: bg(),
     );
   }
 }
