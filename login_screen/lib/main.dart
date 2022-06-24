@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/login.dart';
 
 void main(){
   runApp(loginScreen());
@@ -11,24 +12,8 @@ class loginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp( 
       debugShowCheckedModeBanner: false,
-     home:
-      Scaffold(appBar: AppBar(title: Center(child: Text("Login ID")),),
-     body:Center(
-       child: Center(
-         child: Column(
-                      children: [
-             SizedBox(height: 50,),
-             Container(width: 200,child: TextField()),
-             SizedBox(height: 50,),
-             Container(width: 200,child: TextField()),
-             ElevatedButton(onPressed: (){}, child: Text("Login")),
-           ],
-         ),
-       ),
-     )
-     
-     
-     ), );     
+     home:LoginScreen(),
+     );
 
   }
 }
