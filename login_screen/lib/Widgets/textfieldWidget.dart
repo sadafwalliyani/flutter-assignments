@@ -1,21 +1,28 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget textfieldWidget(textfield) {
+Widget textfieldWidget(textt) {
   return (Container(
-      width: 300,
-      // color: Color.fromARGB(255, 254, 254, 255),
-      child: TextField(
-        decoration: InputDecoration(
-            border:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(50.0)),
-            filled: true,
-            hintStyle: TextStyle(color: Colors.grey[800],
-            fontFamily: 'Play',fontSize: 20,
-            fontWeight: FontWeight.w700,
-            wordSpacing: 0.3,),
-            hintText: 'Enter Mobile Number',
-            prefixIcon: Icon(Icons.phone),
-            fillColor: Colors.white70),
-      )));
+                          height: 50,
+                          width: 300,
+                          child: TextField(
+                          decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                filled: true,
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[800],
+                                  fontSize: 18,
+                                   wordSpacing: 0.3,
+                                ),
+                                hintText: textt,
+                                prefixIcon: Icon(
+                                  Icons.email,
+                                  color: Color(0xff006637),
+                                ),
+                                fillColor: Colors.white70),
+                          ),
+                        )
+                        );
 }
