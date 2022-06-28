@@ -3,49 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:login_screen/Pages/Tabbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-
-
-class LoginScreen extends StatefulWidget {
-  // const LoginScreen({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
   
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<Login> createState() => _LoginState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  var emailContreoller = TextEditingController();
-  var passwordController = TextEditingController();
- String _email = '';
- String  _password= '';
-  @override
-
- void initState() {
-    super.initState();
-    _loadCounter();
-  }
-
-  _loadCounter() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _email = (prefs.getString('email') ?? '');
-    });
-  }
-
-  _incrementCounter() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _email = "sadafwalliyani@gmail.com";
-    });
-    prefs.setString('email', _email);
-  }
-
-
-
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+ Scaffold(
     //  resizeToAvoidBottomInset: false,
       
         appBar: PreferredSize(
@@ -215,26 +184,3 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-// yaha se 
-// void login() async{
-//   if (passwordController.text.isNotEmpty && emailController.text.isNotEmpty){
-// var response= await http.post(Uri.parse("https://reqres.inapi/login"),
-// Body:({
-
-// "email":emailController.text,
-// "password":passwordController.text,
-// }));
-// if(response.statusCode==200){
-//   print("Invalid Credentials");
-// }
-//   }
-//   else{
-//     ScaffoldMessenger.of(context).showSnackBar(context:Text("Blank Value Found"));
-//   }
-
-// }
-// class UserModel{
-//     var email;
-//   var password;
-// UserModel(this.email,this.password);
-// }
