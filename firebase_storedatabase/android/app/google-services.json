@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "863470174934",
+    "project_id": "sadafdatabasestore",
+    "storage_bucket": "sadafdatabasestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863470174934:android:a7145995d308906d22ff77",
+        "android_client_info": {
+          "package_name": "com.example.firebase_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863470174934-a0rbh7vgifh7ugo6coccun4mdiu7gta0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyiNQdXqNZmovLPTD6J_OIbPQ86p_Mx7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863470174934-a0rbh7vgifh7ugo6coccun4mdiu7gta0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
