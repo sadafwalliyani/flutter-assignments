@@ -11,15 +11,16 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
 var users =FirebaseFirestore.instance.collection('users');
 Future<void> addUser() {
 // Call the user's CollectionReference to add a new user
-return users
-.add({
+return users.doc("Sec-A")
+.set({
 
-'full_name': "fullName", // John Doe
-'company': "company", // Stokes and Sons
-'age': "age" // 42
+'full_name': "Sadaf", // John Doe
+'company': "AKESP", // Stokes and Sons
+'age': "28" // 42
 })
 .then((value) => print("User Added"))
 .catchError((error) => print("Failed to add user: $error"));
