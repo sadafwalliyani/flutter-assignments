@@ -11,6 +11,27 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  TextEditingController emailcon = TextEditingController();
+  TextEditingController passwordcon = TextEditingController();
+
+signIntoApp() async {
+    try {
+    final credential = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(
+        email: emailcon.text,
+        password: passwordcon.text,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        print('no user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        print('wrong password provided for that user');
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return 
@@ -84,7 +105,7 @@ class _LoginState extends State<Login> {
                           height: 50,
                           width: 300,
                           child: TextField(
-                            controller: emailContreoller,
+                            controller: emailcon,
                             decoration: InputDecoration(
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10.0),
@@ -111,7 +132,7 @@ class _LoginState extends State<Login> {
                           height: 50,
                           width: 300,
                           child: TextField(
-                            controller: passwordController,
+                            controller: passwordcon,
                             obscureText: true,
                             /* ... */
                             decoration: InputDecoration(
@@ -138,13 +159,10 @@ class _LoginState extends State<Login> {
                         ),
                         RaisedButton(
                           onPressed: ()async {
-                            final SharedPreferences sharedPreferences=await SharedPreferences.getInstance();
-                            sharedPreferences.setString('email', emailContreoller.text);
-                            sharedPreferences.setString('password', passwordController.text);
-                            // MaterialPageRoute(
-                            //                     builder: (context) => TabBarrr());
-                        //   Get.to(TabBarrr());                                                                                                                                                               
-                    
+signIntoApp();
+           Navigator.pushReplacement<void,void>(context,
+                        MaterialPageRoute<void>(builder: (context) => TabBarrr()));
+
                           },
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(80.0)),

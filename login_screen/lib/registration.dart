@@ -12,6 +12,28 @@ class registration extends StatefulWidget {
 }
 
 class _registrationState extends State<registration> {
+      TextEditingController emailcontroller = TextEditingController();
+  TextEditingController passwordcontroller = TextEditingController();
+
+signUpFunction() async {
+    try {
+     final credential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(
+        email: emailcontroller.text,
+        password: passwordcontroller.text,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'weak-password') {
+        print('The password provided is too weak.');
+      } else if (e.code == 'email-already-in-use') {
+        print('The account already exists for that email.');
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,7 +107,14 @@ class _registrationState extends State<registration> {
                         textfieldWidget("Password"),
                           SizedBox(height:10,),
                         RaisedButton(
-                          onPressed: () async {},
+                          onPressed: () async {
+                               signUpFunction();
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                       Login()));  
+                          },
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(80.0)),
                           padding: EdgeInsets.all(0.0),

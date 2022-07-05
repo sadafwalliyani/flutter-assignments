@@ -38,6 +38,35 @@ signUpFunction() async {
     
   
   return Scaffold(
+   appBar: PreferredSize(
+          preferredSize: Size.fromHeight(80.0),
+          child: AppBar(
+            backgroundColor: Color(0xff006637),
+            title: Center(
+              child: Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Text(
+                  "Registration Open",
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+              ),
+            ),
+            flexibleSpace: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: <Color>[
+                      Color(0xffffffff),
+                      Color(0xff006637),
+                      Color(0xff000000),
+                    ]),
+              ),
+            ),
+          ),
+        ),
 
 
     body: Column(
