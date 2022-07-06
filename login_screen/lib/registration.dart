@@ -1,8 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:login_screen/Pages/Tabbar.dart';
 import 'package:login_screen/Widgets/textfieldWidget.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:login_screen/login.dart';
 
 class registration extends StatefulWidget {
   // const registration({Key? key}) : super(key: key);
@@ -12,13 +13,13 @@ class registration extends StatefulWidget {
 }
 
 class _registrationState extends State<registration> {
-      TextEditingController emailcontroller = TextEditingController();
+  TextEditingController emailcontroller = TextEditingController();
   TextEditingController passwordcontroller = TextEditingController();
-
-signUpFunction() async {
+  TextEditingController namecontroller = TextEditingController();
+  signUpFunction() async {
     try {
-     final credential = await FirebaseAuth.instance
-          .createUserWithEmailAndPassword(
+      final credential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: emailcontroller.text,
         password: passwordcontroller.text,
       );
@@ -32,7 +33,6 @@ signUpFunction() async {
       print(e);
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -67,91 +67,157 @@ signUpFunction() async {
           ),
         ),
         body: Center(
-          child: Expanded(
-            child: SingleChildScrollView(
-              physics: AlwaysScrollableScrollPhysics(),
-              child: Column(
-                children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height * 1,
-                    width: MediaQuery.of(context).size.width * 1,
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                      begin: Alignment.topRight,
-                      end: Alignment.bottomLeft,
-                      colors: [
-                        Color.fromARGB(255, 128, 190, 241),
-                        Colors.white,
-                        Color(0xff006637),
-                      ],
-                    )),
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: 100,
-                        ),
-                        Container(
-                            height: 150,
-                            width: 150,
-                            child: Image(
-                              image: AssetImage(
-                                'assests/jp.png',
-                              ),
-                            )),
-                          SizedBox(height:10,),
-                        textfieldWidget("Full Name"),
-                          SizedBox(height:10,),
-                        textfieldWidget("E-mail"),
-                       SizedBox(height:10,),
-
-                        textfieldWidget("Password"),
-                          SizedBox(height:10,),
-                        RaisedButton(
-                          onPressed: () async {
-                               signUpFunction();
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                       Login()));  
-                          },
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(80.0)),
-                          padding: EdgeInsets.all(0.0),
-                          child: Ink(
-                            decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Color(0xff006637),
-                                    Color(0xff000000)
-                                  ],
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight,
-                                ),
-                                borderRadius: BorderRadius.circular(10.0)),
-                            child: Container(
-                              constraints: BoxConstraints(
-                                  maxWidth: 200, minHeight: 50.0),
-                              alignment: Alignment.center,
-                              child: Text(
-                                "Login",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+            child: Expanded(
+          child: SingleChildScrollView(
+            physics: AlwaysScrollableScrollPhysics(),
+            child: Column(children: [
+              Container(
+                height: MediaQuery.of(context).size.height * 1,
+                width: MediaQuery.of(context).size.width * 1,
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Color.fromARGB(255, 128, 190, 241),
+                    Colors.white,
+                    Color(0xff006637),
+                  ],
+                )),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 100,
+                    ),
+                    Container(
+                        height: 150,
+                        width: 150,
+                        child: Image(
+                          image: AssetImage(
+                            'assests/jp.png',
+                          ),
+                        )),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 300,
+                      child: TextField(
+                        controller: namecontroller,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            filled: true,
+                            hintStyle: TextStyle(
+                              color: Colors.grey[800],
+                              fontSize: 18,
+                              wordSpacing: 0.3,
+                            ),
+                            hintText: "Write Your Name",
+                            prefixIcon: Icon(
+                              Icons.contact_mail,
+                              color: Color(0xff006637),
+                            ),
+                            fillColor: Colors.white70),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 300,
+                      child: TextField(
+                        controller: emailcontroller,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            filled: true,
+                            hintStyle: TextStyle(
+                              color: Colors.grey[800],
+                              fontSize: 18,
+                              wordSpacing: 0.3,
+                            ),
+                            hintText: "Write Your E-mail",
+                            prefixIcon: Icon(
+                              Icons.email,
+                              color: Color(0xff006637),
+                            ),
+                            fillColor: Colors.white70),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 300,
+                      child: TextField(
+                        controller: passwordcontroller,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            filled: true,
+                            hintStyle: TextStyle(
+                              color: Colors.grey[800],
+                              fontSize: 18,
+                              wordSpacing: 0.3,
+                            ),
+                            hintText: "Password",
+                            prefixIcon: Icon(
+                              Icons.password,
+                              color: Color(0xff006637),
+                            ),
+                            fillColor: Colors.white70),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    RaisedButton(
+                      onPressed: () async {
+                        signUpFunction();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => Login()));
+                      },
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(80.0)),
+                      padding: EdgeInsets.all(0.0),
+                      child: Ink(
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [Color(0xff006637), Color(0xff000000)],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            ),
+                            borderRadius: BorderRadius.circular(10.0)),
+                        child: Container(
+                          constraints:
+                              BoxConstraints(maxWidth: 200, minHeight: 50.0),
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Register",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
+            ]),
           ),
-        ));
+        )));
   }
 }

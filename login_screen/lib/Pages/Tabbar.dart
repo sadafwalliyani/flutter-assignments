@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/Constant/app_colors.dart';
 import 'package:login_screen/Pages/Notification.dart';
 import 'package:login_screen/Pages/Profile.dart';
 import 'package:login_screen/Pages/dart.dart';
@@ -30,69 +29,50 @@ class _TabBarrrState extends State<TabBarrr>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(AppColorContant.screenColor),
         actions: [
+     Padding(
+      padding:EdgeInsets.only(top: 5),
+    
+       child: CircleAvatar(
+           radius:35,
+                             child:
+                              IconButton(
+                 icon: Image.asset('assests/sadaf.jpg',
+                 ),
+                  iconSize: 35,
+                           onPressed: () {
+                   Navigator.push(
+                       context,
+                       MaterialPageRoute(
+                           builder: (context) => profiile()));
+                 },
+                             )),
+     ),
           Padding(
-              padding: EdgeInsets.all(2),
-              child: CircleAvatar(
-                  radius: 30,
-                  backgroundColor: Color(0xffffffff),
-                  child: IconButton(
-                    icon: Image.asset(
-                      'assests/sadaf.jpg',
-                    ),
-                    iconSize: 22,
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => profiile()));
-                    },
-                  )
-                  )
-                  ),
-          Padding(
-            padding: EdgeInsets.all(2),
+            padding: EdgeInsets.only(top: 10),
             child: searchbarWidget('searchbar'),
           ),
           Padding(
-            padding: EdgeInsets.all(2),
+            padding: EdgeInsets.only(top: 5),
             child: CircleAvatar(
-              backgroundColor: Color(0xffffffff),
-              radius: 30,
-              child: Stack(children: [
-                CircleAvatar(
-                  backgroundColor: Color(0xffffffff),
-                  radius: 19,
-                  backgroundImage: AssetImage(
-                    'assests/Group 880.png',
-                  ),
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Notificationss()));
-                    },
-                    icon: Icon(
-                      Icons.abc,
-                      color: Color(0xffffffff),
-                    ),
-                  ),
-                )
-              ]),
+             backgroundColor: Colors.white,
+              radius: 35,
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Notificationss()));
+                },
+                icon: Icon(
+                  Icons.notifications,
+                  color:Color(0xff006637),
+                ),
+              ),
             ),
           ),
         ],
-        bottom: TabBar(
-            controller: _controller,
-            indicatorColor: Colors.white,
-            tabs: [
-              Tab(
-                text: "Dart Assignments",
-              ),
-              Tab(
-                text: "Flutter Assignments",
-              ),
-            ]),
+
       flexibleSpace: Container(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -102,9 +82,24 @@ class _TabBarrrState extends State<TabBarrr>
                       Color(0xffffffff),
                       Color(0xff006637),
                       Color(0xff000000),
-                    ]),
+                    ]
+                    ),
               ),
-            ),),
+            ),
+                bottom: TabBar(
+            controller: _controller,
+            indicatorColor: Colors.white,
+            tabs: [
+              Tab(
+                text: "Dart",
+              ),
+              Tab(
+                text: "Flutter",
+              ),
+             
+            ]),
+      ),
+            
       body: Container(
         child: TabBarView(controller: _controller, children: [
           dartScreenn(),

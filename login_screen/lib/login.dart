@@ -1,8 +1,9 @@
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:login_screen/Pages/Tabbar.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 class Login extends StatefulWidget {
   
 
@@ -90,11 +91,11 @@ signIntoApp() async {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: 200,
+                          height: 150,
                         ),
                         Container(
-                            height: 300,
-                            width: 300,
+                            height: 250,
+                            width: 250,
                             child: Image(
                               image: AssetImage('assests/jp.png'),
                             )),
