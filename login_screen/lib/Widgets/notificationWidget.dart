@@ -7,7 +7,8 @@ Widget notofocationWidget(png, textt) {
       Image(
           image: AssetImage(
         png,
-      )),
+      ),   color: Color(0xff006637),
+      ),
       SizedBox(width: 10,),
       Container(
         height: 50,
@@ -22,7 +23,7 @@ Widget notofocationWidget(png, textt) {
               style: TextStyle(
               fontFamily: 'Play',
               fontSize: 16,
-              color: Colors.white,
+              color: Color(0xff006637),
               wordSpacing: 2,
               letterSpacing: 2,
             ),
@@ -32,7 +33,10 @@ Widget notofocationWidget(png, textt) {
       Image(
                   image: AssetImage(
         'assests/Vector.png',
-      )),
+        
+      ),
+         color: Color(0xff006637),
+      )
     ],
   ));
 }

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 Widget profilebuttonsWidget(textt, png) {
   return (Container(
     height: 30,
-    width: 98,
+    width: 100,
     decoration: new BoxDecoration(
-        color: Color(0xff343645),
+        color: Color(0xff006637),
         borderRadius: BorderRadius.all(Radius.circular(10))),
     child: Padding(
       padding: EdgeInsets.only(

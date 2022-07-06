@@ -23,7 +23,6 @@ Widget textnotiWidget(text1, text2, text3) {
                       left: 6,
                     ),
                     child: Column(
-                      
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
@@ -41,7 +40,7 @@ Widget textnotiWidget(text1, text2, text3) {
                             text2,
                             style: TextStyle(
                               color: Color(0xff006637),
-                              fontSize: 10,
+                              fontSize: 15,
                               letterSpacing: 1,
                               fontFamily: 'Play',
                             ),
@@ -52,7 +51,7 @@ Widget textnotiWidget(text1, text2, text3) {
                             maxLines: 2,
                             style: TextStyle(
                               color: Color(0xff006637),
-                              fontSize: 10,
+                              fontSize: 12,
                               letterSpacing: 1,
                               fontFamily: 'Play',
                             ),
@@ -60,32 +59,35 @@ Widget textnotiWidget(text1, text2, text3) {
                         ]),
                   ))),
           SizedBox(
-            width: 30,
+            width: 90,
           ),
           Container(
-              height: 90,
+              // height: 200,
               child: Center(
-                child: Stack(
-                  children: [
-                    Image(
-                      image: AssetImage(
-                        'assests/image-45.png',
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: 5,
-                        left: 4,
-                      ),
-                      child: Image(
-                        image: AssetImage(
-                          'assests/Group 880.png',
-                        ),
-                      ),
-                    ),
-                  ],
+            child: Stack(
+              children: [
+                Image(
+                  image: AssetImage(
+                    'assests/image-45.png',
+                  ),
+                  color: Color(0xff006637),
+                  height: 300,
                 ),
-              )),
+                           Padding(
+                  padding: EdgeInsets.only(
+                    top: 25,
+                    left: 24,
+                  ),
+                  child: Image(
+                    image: AssetImage(
+                      'assests/Group 880.png',
+                    ),
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          )),
         ],
       ),
     ),

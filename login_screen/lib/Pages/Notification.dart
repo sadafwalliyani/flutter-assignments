@@ -40,7 +40,7 @@ class _NotificationssState extends State<Notificationss> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 1,
-                            fontFamily: 'Play',
+                            fontFamily: 'Arima',
                           ),
                         ),
          
@@ -84,7 +84,7 @@ class _NotificationssState extends State<Notificationss> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 1,
-                            fontFamily: 'Play',
+                            fontFamily: 'Arima',
                       ),
                     ),
                     IconButton(

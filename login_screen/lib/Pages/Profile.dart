@@ -40,7 +40,7 @@ class _profiileState extends State<profiile> {
                   height: 200,
                   width: 390,
                   decoration: new BoxDecoration(
-                    color: Color(0xff1F222A),
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Padding(
@@ -62,14 +62,15 @@ class _profiileState extends State<profiile> {
                                       style: TextStyle(
                                           fontSize: 30,
                                           fontWeight: FontWeight.bold,
-                                          fontFamily: 'Russo-One',
-                                          color: Colors.white)),
+                                          fontFamily: 'Arima',
+                                          color: Color(0xff006637))),
                                   SizedBox(
                                     width: 20,
                                   ),
                                   Image(
                                       image:
-                                          AssetImage('assests/Group 751.png')),
+                                          AssetImage('assests/Group 751.png'),
+                                          ),
                                 ],
                               ),
                               SizedBox(
@@ -83,7 +84,7 @@ class _profiileState extends State<profiile> {
                                     style: TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: 'Russo-One',
+                                        fontFamily: 'Arima',
                                         color: Color(0xffB0BEC5))),
                               ),
                               SizedBox(
@@ -105,7 +106,7 @@ class _profiileState extends State<profiile> {
                                           Image(
                                             image: AssetImage(
                                                 'assests/Rectangle 28.png'),
-                                            color: Color(0xff4D5DFA),
+                                            color: Color(0xff006637),
                                           ),
                                           SizedBox(
                                             width: 5,
@@ -113,7 +114,7 @@ class _profiileState extends State<profiile> {
                                           Image(
                                             image:
                                                 AssetImage('assests/Lv 5.png'),
-                                            color: Color(0xff4D5DFA),
+                                            color: Color(0xff006637),
                                           ),
                                         ],
                                       ),
@@ -137,8 +138,9 @@ class _profiileState extends State<profiile> {
                               icon: Image.asset(
                                 'assests/close-circle.png',
                               ),
-                              iconSize: 22,
-                            ),
+                              iconSize: 35,
+                            color:Color(0xff006637), ),
+                           
                           ),
                         ],
                       ),
@@ -152,13 +154,13 @@ class _profiileState extends State<profiile> {
                             Text('1,208',
                                 style: TextStyle(
                                   color: Color(
-                                    0xff4D5DFA,
+                                   0xff006637,
                                   ),
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'Russo-One',
+                                  fontFamily: 'Arima',
                                 )),
-                            Text('Transaction',
+                            Text('Achieved',
                                 style: TextStyle(
                                   color: Color(
                                     0xff939FA4,
@@ -173,11 +175,11 @@ class _profiileState extends State<profiile> {
                               Text('726',
                                   style: TextStyle(
                                     color: Color(
-                                      0xff4D5DFA,
+                                        0xff006637,
                                     ),
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: 'Russo-One',
+                                    fontFamily: 'Arima',
                                   )),
                               Text('Points',
                                   style: TextStyle(
@@ -192,14 +194,14 @@ class _profiileState extends State<profiile> {
                           Image(image: AssetImage('assests/Linees.jpg')),
                           Column(
                             children: [
-                              Text('8',
+                              Text('1',
                                   style: TextStyle(
                                     color: Color(
-                                      0xff4D5DFA,
+                                      0xff006637,
                                     ),
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: 'Russo-One',
+                                    fontFamily: 'Arima',
                                   )),
                               Text('Rank',
                                   style: TextStyle(
@@ -232,13 +234,13 @@ class _profiileState extends State<profiile> {
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 Container(
                   height: 264,
                   width: 390,
                   decoration: new BoxDecoration(
-                    color: Color(0xff1F222A),
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Padding(
@@ -250,11 +252,11 @@ class _profiileState extends State<profiile> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         notofocationWidget(
-                            'assests/receipt-minus.png', "All Transactions"),
+                            'assests/receipt-minus.png', "All Assignments"),
                         notofocationWidget('assests/Caution Sign-1.png',
-                            "Pending Transactions"),
+                            "Pending Assignments"),
                         notofocationWidget(
-                            'assests/Clock.png', "Refund status"),
+                            'assests/Clock.png', "Course Status"),
                         notofocationWidget('assests/!-1.png', "Raise an issue"),
                         notofocationWidget(
                             'assests/Vector (Stroke).png', "Help and Support"),
@@ -269,7 +271,7 @@ class _profiileState extends State<profiile> {
                   height: 180,
                   width: 390,
                   decoration: new BoxDecoration(
-                    color: Color(0xff1F222A),
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Padding(
