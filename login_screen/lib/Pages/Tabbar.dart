@@ -30,24 +30,20 @@ class _TabBarrrState extends State<TabBarrr>
     return Scaffold(
       appBar: AppBar(
         actions: [
-     Padding(
-      padding:EdgeInsets.only(top: 5),
-    
-       child: CircleAvatar(
-           radius:35,
-                             child:
-                              IconButton(
-                 icon: Image.asset('assests/sadaf.jpg',
-                 ),
-                  iconSize: 35,
-                           onPressed: () {
-                   Navigator.push(
-                       context,
-                       MaterialPageRoute(
-                           builder: (context) => profiile()));
-                 },
-                             )),
-     ),
+          Padding(
+            padding: EdgeInsets.only(top: 5),
+            child: CircleAvatar(
+                 radius: 35,
+             backgroundImage: AssetImage( 'assests/sadaf.jpg'),
+                child: IconButton(
+                  icon: Icon(Icons.circle),
+                 iconSize: 1,
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => profiile()));
+                  },
+                )),
+          ),
           Padding(
             padding: EdgeInsets.only(top: 10),
             child: searchbarWidget('searchbar'),
@@ -55,7 +51,7 @@ class _TabBarrrState extends State<TabBarrr>
           Padding(
             padding: EdgeInsets.only(top: 5),
             child: CircleAvatar(
-             backgroundColor: Colors.white,
+              backgroundColor: Colors.white,
               radius: 35,
               child: IconButton(
                 onPressed: () {
@@ -66,27 +62,25 @@ class _TabBarrrState extends State<TabBarrr>
                 },
                 icon: Icon(
                   Icons.notifications,
-                  color:Color(0xff006637),
+                  color: Color(0xff006637),
                 ),
               ),
             ),
           ),
         ],
-
-      flexibleSpace: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: <Color>[
-                      Color(0xffffffff),
-                      Color(0xff006637),
-                      Color(0xff000000),
-                    ]
-                    ),
-              ),
-            ),
-                bottom: TabBar(
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: <Color>[
+                  Color(0xffffffff),
+                  Color(0xff006637),
+                  Color(0xff000000),
+                ]),
+          ),
+        ),
+        bottom: TabBar(
             controller: _controller,
             indicatorColor: Colors.white,
             tabs: [
@@ -96,10 +90,8 @@ class _TabBarrrState extends State<TabBarrr>
               Tab(
                 text: "Flutter",
               ),
-             
             ]),
       ),
-            
       body: Container(
         child: TabBarView(controller: _controller, children: [
           dartScreenn(),

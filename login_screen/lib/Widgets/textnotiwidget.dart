@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 Widget textnotiWidget(text1, text2, text3) {
   return (Container(
-    height: 90,
-    width: 300,
+    height: 80,
+    width: 380,
     decoration: new BoxDecoration(
-      color: Color.fromARGB(255, 42, 46, 48),
+      color: Colors.white,
       borderRadius: BorderRadius.all(Radius.circular(20)),
     ),
     child: SingleChildScrollView(
@@ -30,8 +30,8 @@ Widget textnotiWidget(text1, text2, text3) {
                             text1,
                             maxLines: 1,
                             style: TextStyle(
-                              color: Color(0xffFFFFFF),
-                              fontSize: 15,
+                              color: Color(0xff006637),
+                              fontSize: 20,
                               fontWeight: FontWeight.w600,
                               letterSpacing: 1,
                               fontFamily: 'Play',
@@ -40,7 +40,7 @@ Widget textnotiWidget(text1, text2, text3) {
                           Text(
                             text2,
                             style: TextStyle(
-                              color: Color(0xff9A9B9B),
+                              color: Color(0xff006637),
                               fontSize: 10,
                               letterSpacing: 1,
                               fontFamily: 'Play',
@@ -51,7 +51,7 @@ Widget textnotiWidget(text1, text2, text3) {
                             textAlign: TextAlign.left,
                             maxLines: 2,
                             style: TextStyle(
-                              color: Color(0xff9A9B9B),
+                              color: Color(0xff006637),
                               fontSize: 10,
                               letterSpacing: 1,
                               fontFamily: 'Play',
