@@ -1,8 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_screen/Pages/Tabbar.dart';
 import 'package:login_screen/Widgets/circleavatarWidget.dart';
 import 'package:login_screen/Widgets/notificationWidget.dart';
 import 'package:login_screen/Widgets/profilebuttonsWidget.dart';
+import 'package:login_screen/login.dart';
 
 class profiile extends StatefulWidget {
   const profiile({Key? key}) : super(key: key);
@@ -12,7 +14,16 @@ class profiile extends StatefulWidget {
 }
 
 class _profiileState extends State<profiile> {
+  Future <Login> _signOut()  async{
+    await FirebaseAuth.instance.signOut();
+
+    return new Login();
+}
+  // void _signOut() {
+  // FirebaseAuth.instance.signOut();
+  // FirebaseUser user = FirebaseAuth.instance.currentUser;}
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
@@ -70,7 +81,8 @@ class _profiileState extends State<profiile> {
                                   Image(
                                       image:
                                           AssetImage('assests/Group 751.png'),
-                                          ),
+                                         ),
+                                          
                                 ],
                               ),
                               SizedBox(
@@ -126,7 +138,8 @@ class _profiileState extends State<profiile> {
                           ),
                           Padding(
                             padding: EdgeInsets.only(
-                              bottom: 20,
+                              bottom: 10,
+                              left: 70,
                             ),
                             child: IconButton(
                               onPressed: () {
@@ -137,10 +150,10 @@ class _profiileState extends State<profiile> {
                               },
                               icon: Image.asset(
                                 'assests/close-circle.png',
-                              ),
+                              color:Color(0xff006637),),
+                              
                               iconSize: 35,
-                            color:Color(0xff006637), ),
-                           
+                            )                           
                           ),
                         ],
                       ),
@@ -291,6 +304,45 @@ class _profiileState extends State<profiile> {
                     ),
                   ),
                 ),
+      SizedBox(
+                  height: 10,
+                ),           
+                    RaisedButton(
+                      onPressed: () async {
+                       _signOut();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => Login()));
+                      },
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(80.0)),
+                      padding: EdgeInsets.all(0.0),
+                      child: Ink(
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [Color(0xff006637), Color(0xff000000)],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            ),
+                            borderRadius: BorderRadius.circular(10.0)),
+                        child: Container(
+                          constraints:
+                              BoxConstraints(maxWidth: 200, minHeight: 50.0),
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Sign Out",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+
               ],
             ),
           ),

@@ -6,7 +6,7 @@ Widget textnotiWidget(text1, text2, text3) {
     height: 80,
     width: 380,
     decoration: new BoxDecoration(
-      color: Colors.white,
+      color: Color.fromARGB(255, 240, 233, 233),
       borderRadius: BorderRadius.all(Radius.circular(20)),
     ),
     child: SingleChildScrollView(

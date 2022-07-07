@@ -59,6 +59,9 @@ class _NotificationssState extends State<Notificationss> {
                     Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  textnotiWidget('Hackathon', 'Pending.','July 17  - 09:00 am'),
+                  SizedBox(height: 10,),
+         
                   textnotiWidget('Assignment-1', 'Completed.','June 20  - 12:32 Pm'),
                   SizedBox(height: 10,),
                   textnotiWidget('Assignment-2', 'Completed.','June 20  - 12:32 Pm'),
