@@ -20,23 +20,33 @@ class _GetUserDataState extends State<GetUserData> {
     return Scaffold(
        body: Center(
         child: 
-        FutureBuilder<QuerySnapshot>{
-          future:users.get(),
-          builder:(context,AsyncSnapshot<QuerySnapshot>snapshot){ 
-if(snapshot.hasData){
-  return ListView(children: [
- snapshot.data!.docs.map(DocumentSnapshot document){
-        Map<String,dynamic> data=document.data() as Map<String, dynamic>;
-    return ListView(build(
-      title:Text["FullName"],
-      subtitle:Text["Company"],
-      trailing:IconButton(onPressed: (){
-
-        
-      }, icon: Icon(Icons.delete)))
-      );
-      } .toList(),
-    ], 
+        FutureBuilder<QuerySnapshot>(
+          future: users.get(),
+          builder:(context,AsyncSnapshot<QuerySnapshot>snapshot){
+           if(snapshot.hasData){
+  return ListView(children: 
+ snapshot.data!.docs.map((DocumentSnapshot document){
+        Map<String,dynamic> data=
+        document.data()! as Map<String, dynamic>;
+    return ListTile(
+      title: Text(data["FullName"]),
+      subtitle:Text(data["Company"]),
+      trailing:IconButton(
+        onPressed: (){},
+        icon: Icon(Icons.delete))
+    );
+    // ListView(
+    //   build(
+    //   title:Text["FullName"],
+    //   subtitle:Text["Company"],
+    //   trailing:IconButton(
+    //     onPressed: (){},
+    //     icon: Icon(Icons.delete)
+    //     )
+    //   )
+// );
+           }) .toList(),
+     
   );
   
 
@@ -47,8 +57,8 @@ if(snapshot.hasData){
       
 }
           }
-        }
+        
         )
-        );
+    ));
   }
 }

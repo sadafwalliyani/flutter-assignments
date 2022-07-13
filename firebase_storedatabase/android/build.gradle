@@ -1,8 +1,4 @@
-// │ android {                                                                                                                  │
-// │   defaultConfig {                                                                                                          │
-// │     minSdkVersion 19                                                                                                       │
-// │   }                                                                                                                        │
-// │ }     
+ 
 
 buildscript {
     ext.kotlin_version = '1.6.10'
@@ -34,5 +30,4 @@ subprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-                                                
+}                                          
