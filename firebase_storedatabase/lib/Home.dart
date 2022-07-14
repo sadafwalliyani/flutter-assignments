@@ -18,9 +18,10 @@ Future<void> addUser() {
 return users.doc("Sec-A")
 .set({
 
-'full_name': "Sadaf", // John Doe
-'company': "AKESP", // Stokes and Sons
-'age': "28" // 42
+'full_name': ["Samra","Sadaf","Binish"], // John Doe
+'company': ["AKESP","JAWAN PAK","SMS-Pri"], // Stokes and Sons
+'age': ["28", "24","30"] // 42
+
 })
 .then((value) => print("User Added"))
 .catchError((error) => print("Failed to add user: $error"));

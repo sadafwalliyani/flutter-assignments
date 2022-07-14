@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,9 @@ class _GetUserDataState extends State<GetUserData> {
       title: Text(data["FullName"]),
       subtitle:Text(data["Company"]),
       trailing:IconButton(
-        onPressed: (){},
+        onPressed: (){
+
+        },
         icon: Icon(Icons.delete))
     );
     // ListView(
