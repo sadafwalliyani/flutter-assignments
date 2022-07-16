@@ -18,7 +18,7 @@ Future<void> addUser() {
 return users.doc("Sec-A")
 .set({
 
-'full_name': ["Samra","Sadaf","Binish"], // John Doe
+'full_name': ["Sammra","Sadaf","Binish"], // John Doe
 'company': ["AKESP","JAWAN PAK","SMS-Pri"], // Stokes and Sons
 'age': ["28", "24","30"] // 42
 
