@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:practiceoftest/Widgets/buttons.dart';
+import 'package:practiceoftest/Widgets/productinfo.dart';
 import 'package:practiceoftest/Widgets/screen1text.dart';
 import 'package:practiceoftest/screens/screen2.dart';
 import 'package:practiceoftest/screens/screen3.dart';
