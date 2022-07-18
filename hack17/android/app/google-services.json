@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918387279717",
+    "project_id": "signinsignout",
+    "storage_bucket": "signinsignout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918387279717:android:9d8ea121e9fcf32afe438c",
+        "android_client_info": {
+          "package_name": "com.example.login_screen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918387279717-vgiciunkbb1sl8u900898ep0216abs05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5-HDQLYCpKAhhAPkIL1lmaLxslnXxe84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918387279717-vgiciunkbb1sl8u900898ep0216abs05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

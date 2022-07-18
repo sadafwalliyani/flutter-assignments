@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practiceoftest/ToDoApp.dart';
 import 'package:practiceoftest/splashscreen.dart';
+import 'package:practiceoftest/src/animated_bottom_bar.dart';
 import 'package:practiceoftest/tababr.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    home: ToDoApp(),
+ home:Tabbarr(),
     );
   }
 }
