@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget gridviewwidget(){
   return (
-Container(
+       
+  Container(
         child: GridView.extent(  
               primary: false,  
               padding: const EdgeInsets.all(2),  
@@ -14,9 +17,10 @@ Container(
                                 Image(image: AssetImage('assests/2.png')),  
                                 Image(image: AssetImage('assests/3.png')),  
                                 Image(image: AssetImage('assests/Bitmap.png')),  
-
+  
               ],  
             ),
       )
+                
   );
 }
