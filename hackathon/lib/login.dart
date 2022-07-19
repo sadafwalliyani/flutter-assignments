@@ -57,6 +57,7 @@ signIntoApp() async {
                         Container(
                           height: 50,
                           width: 300,
+                      
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
@@ -64,7 +65,7 @@ signIntoApp() async {
                             controller: emailcon,
                             decoration: InputDecoration(
                                 border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15.0),
+                                  borderRadius: BorderRadius.circular(25),
                                 ),
                                 filled: true,
                                 hintStyle: TextStyle(
@@ -93,7 +94,7 @@ signIntoApp() async {
                             /* ... */
                             decoration: InputDecoration(
                                 border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15.0),
+                                  borderRadius: BorderRadius.circular(25),
                                 ),
                                 filled: true,
                                 hintStyle: TextStyle(
@@ -133,14 +134,14 @@ signIntoApp();
                                 borderRadius: BorderRadius.circular(10.0)),
                             child: Container(
                               constraints:
-                                  BoxConstraints(maxWidth: 200, minHeight: 50.0),
+                                  BoxConstraints(maxWidth: 250, minHeight: 50.0),
                               alignment: Alignment.center,
                               child: Text(
                                 "Login",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 20,
+                                  fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -160,7 +161,7 @@ signIntoApp();
                                 borderRadius: BorderRadius.circular(10.0)),
                             child: Container(
                               constraints:
-                                  BoxConstraints(maxWidth: 200, minHeight: 50.0),
+                                  BoxConstraints(maxWidth: 250, minHeight: 50.0),
                               alignment: Alignment.center,
 
                               child: Text(
@@ -168,7 +169,7 @@ signIntoApp();
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 20,
+                                  fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:practiceoftest/Pages/Tabbar.dart';
 
 import 'package:practiceoftest/firebase_options.dart';
+import 'package:practiceoftest/login.dart';
 import 'package:practiceoftest/splashScreen.dart';
 
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TabBarrr(),
+      home:TabBarrr(),
 
     );
   }
