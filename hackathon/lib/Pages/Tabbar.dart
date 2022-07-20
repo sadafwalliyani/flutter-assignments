@@ -37,6 +37,7 @@ class _TabBarrrState extends State<TabBarrr>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 207, 205, 205),
         actions: [

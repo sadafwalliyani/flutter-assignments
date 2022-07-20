@@ -35,14 +35,14 @@ class _BottomComtrollerState extends State<BottomComtroller> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag_outlined), label: "Favourite"),
+              icon: Icon(Icons.shopping_bag_outlined), label: "Cart"),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: "Cart",
+            label: "Settings",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add),
-            label: "Person",
+            label: "Add",
           ),
         ],
         onTap: (index) {
