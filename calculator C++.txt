@@ -1,0 +1,33 @@
+int main()
+{
+     int a,b;
+    char opt;
+    printf("Enter Marks:");
+    scanf("%d",&a);
+  printf("Enter Marks:");
+    scanf("%d",&b);
+    printf("Choose 1 for + 2 for - 3 for * and 4 for /");
+    opt=getche();
+    switch(opt)
+    {
+        
+        case '1':
+        printf("\n\nSum is %d",a+b);
+        break;
+        case '2':
+        printf("\n\nMin is %d",a-b);
+        break;
+        case '3':
+        printf("\n\nMuli is %d",a*b);
+        break;
+        case '4':
+        printf("\n\nDiv is %d",a/b);
+        break;
+        default:
+        printf("invalid number");
+        
+    }
+    
+
+    return 0;
+}

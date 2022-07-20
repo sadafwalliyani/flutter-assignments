@@ -27,10 +27,10 @@ class _HomeState extends State<Home> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("5182 Items found for “Top”",
+              Text("5152 Items found for “Top”",
                style: GoogleFonts.raleway(
                       color: Color.fromARGB(255, 170, 156, 156),
-                      fontSize: 18,
+                      fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),
               ),
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
                 
               ],),
               
-              SizedBox(height: 5,),
+              SizedBox(height: 10,),
                Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
@@ -53,8 +53,8 @@ class _HomeState extends State<Home> {
                 Text(
                     "SANDY WILLIAMS",
                     style: GoogleFonts.raleway(
-                      color: Color.fromARGB(255, 170, 156, 156),
-                      fontSize: 18,
+                      color: Colors.black,                     
+                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),),
                     CircleAvatar(
@@ -64,14 +64,14 @@ class _HomeState extends State<Home> {
                 Text(
                     "Alero Samuel",
                     style: GoogleFonts.raleway(
-                      color: Color.fromARGB(255, 170, 156, 156),
-                      fontSize: 18,
+                      color: Colors.black,
+                      fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),),
         
               ],),
               
-              SizedBox(height: 5,),
+              SizedBox(height: 10,),
               Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [

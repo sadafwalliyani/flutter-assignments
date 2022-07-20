@@ -3,6 +3,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:practiceoftest/Pages/Tabbar.dart';
+import 'package:practiceoftest/Pages/children.dart';
+import 'package:practiceoftest/Pages/measurement.dart';
 import 'package:practiceoftest/bottomnavigation/cart.dart';
 import 'package:practiceoftest/bottomnavigation/home.dart';
 
@@ -25,7 +27,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Home(),
+      home:
+     measurement(),
 
     );
   }
