@@ -16,19 +16,22 @@ class _cartState extends State<cart> {
   Widget build(BuildContext context) {
    return
    Scaffold(
-    body: Column(
-      
-      children: [
-      cartwidget('assests/Rectangle 3.png'),
-      SizedBox(height: 5,),
-      cartwidget('assests/Rectangle 4.png'),
-      SizedBox(height: 5,),
-      cartwidget('assests/Rectangle 5.png'),
-      SizedBox(height: 5,),
-      cartwidget('assests/Rectangle 6.png'),
-      SizedBox(height: 5,),
-      paynowwidget(),
-    ],)
+    body: SingleChildScrollView(
+      child: Column(
+        
+        
+        children: [
+        cartwidget('assests/Rectangle 3.png'),
+        SizedBox(height: 5,),
+        cartwidget('assests/Rectangle 4.png'),
+        SizedBox(height: 5,),
+        cartwidget('assests/Rectangle 5.png'),
+        SizedBox(height: 5,),
+        cartwidget('assests/Rectangle 6.png'),
+        SizedBox(height: 5,),
+        paynowwidget(),
+      ],),
+    )
    ); 
   }
 }
