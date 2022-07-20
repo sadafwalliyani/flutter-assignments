@@ -5,11 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:practiceoftest/Pages/Tabbar.dart';
 import 'package:practiceoftest/Pages/children.dart';
 import 'package:practiceoftest/Pages/measurement.dart';
+import 'package:practiceoftest/bottomnavigation/bnbar.dart';
 import 'package:practiceoftest/bottomnavigation/cart.dart';
 import 'package:practiceoftest/bottomnavigation/home.dart';
 
 import 'package:practiceoftest/firebase_options.dart';
 import 'package:practiceoftest/login.dart';
+import 'package:practiceoftest/screens/Screen4.dart';
 import 'package:practiceoftest/splashScreen.dart';
 
 
@@ -28,8 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home:
-     measurement(),
-
+   Home1()
     );
   }
 }

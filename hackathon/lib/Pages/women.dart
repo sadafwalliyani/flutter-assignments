@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:practiceoftest/Pages/measurement.dart';
 import 'package:practiceoftest/Widgets/buttonwidget.dart';
 import 'package:practiceoftest/Widgets/gridview.dart';
 import 'package:practiceoftest/Widgets/productinfo.dart';
@@ -32,54 +34,59 @@ class _womenState extends State<women> {
                     height: 5,
                   ),
                   txtwidget(),
-                
                   Container(
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          Image.asset(
-                            'assests/screen4.png',
-                            height: 300,
-                            width: 200,
+                          Container(
+                            child: 
+                            ClipRRect(
+                              child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => measurement()));
+                            },
+                            child:  Image.asset(
+                              'assests/screen4.png',
+                              height: 300,
+                              width: 200,
+                            ),)
+                            )
+                           
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Image.asset(
-                            'assests/1.png',
-                            height: 200,
-                            width: 100,
-                          ),
-                    
+                                'assests/1.png',
+                                height: 200,
+                                width: 100,
+                              ),
                               Image.asset(
-                            'assests/2.png',
-                            height: 200,
-                            width: 100,
-                          ),
+                                'assests/2.png',
+                                height: 200,
+                                width: 100,
+                              ),
                             ],
                           ),
-                          
-                           Column(
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                             Image.asset(
-                            'assests/3.png',
-                            height: 200,
-                            width: 100,
-                          ),
-                        
                               Image.asset(
-                            'assests/Bitmap.png',
-                            height: 200,
-                            width: 100,
-                          ),
+                                'assests/3.png',
+                                height: 200,
+                                width: 100,
+                              ),
+                              Image.asset(
+                                'assests/Bitmap.png',
+                                height: 200,
+                                width: 100,
+                              ),
                             ],
                           ),
-                                       ],
+                        ],
                       ),
                     ),
-                    
                   ),
                   buttonwidget(),
                   SizedBox(

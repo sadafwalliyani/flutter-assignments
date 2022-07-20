@@ -22,13 +22,14 @@ Widget buttonwidget(){
                                     borderRadius: BorderRadius.circular(80.0)),
                                 padding: EdgeInsets.all(0.0),
                                 child: Ink(
-                                  decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [Color(0xffFE2550), Color(0xff000000)],
-                                        begin: Alignment.centerLeft,
-                                        end: Alignment.centerRight,
-                                      ),
-                                      borderRadius: BorderRadius.circular(10.0)),
+      decoration: BoxDecoration(
+        // gradient: LinearGradient(
+        //   colors: [Color(0xffFE2550), Color(0xff000000)],
+        // begin: Alignment.centerLeft,
+        //end: Alignment.centerRight,
+        color: Color(0xffFE2550),
+        borderRadius: BorderRadius.circular(5),
+      ),
                                   child: Container(
                                     constraints:
                                         BoxConstraints(maxWidth: 100, minHeight: 50.0),
@@ -57,13 +58,15 @@ Widget buttonwidget(){
                                     borderRadius: BorderRadius.circular(80.0)),
                                 padding: EdgeInsets.all(0.0),
                                 child: Ink(
-                                  decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [Color(0xffFE2550), Color(0xff000000)],
-                                        begin: Alignment.centerLeft,
-                                        end: Alignment.centerRight,
-                                      ),
-                                      borderRadius: BorderRadius.circular(10.0)),
+      decoration: BoxDecoration(
+        // gradient: LinearGradient(
+        //   colors: [Color(0xffFE2550), Color(0xff000000)],
+        // begin: Alignment.centerLeft,
+        //end: Alignment.centerRight,
+        color: Color(0xffFE2550),
+        borderRadius: BorderRadius.circular(5),
+      ),
+                                      
                                   child: Container(
                                     constraints:
                                         BoxConstraints(maxWidth: 100, minHeight: 50.0),
