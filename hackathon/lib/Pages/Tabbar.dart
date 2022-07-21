@@ -83,6 +83,8 @@ class _TabBarrrState extends State<TabBarrr>
           ),
         ],
         bottom: TabBar(
+          labelColor: Colors.pink,
+          unselectedLabelColor:Colors.grey,
             controller: _controller,
             indicatorColor: Colors.white,
             tabs: [
@@ -107,108 +109,3 @@ class _TabBarrrState extends State<TabBarrr>
     );
   }
 }
-// import 'package:flutter/material.dart';
-
-// class MyHomePage extends StatefulWidget {
-
-//   @override
-//   State createState() {
-//     return _MyHomePage();
-//   }
-
-// }
-
-// class _MyHomePage extends State{
-//   int _selectedIndexForBottomNavigationBar = 0;
-//   int _selectedIndexForTabBar = 0;
-
-
-//   //1
-//   static List _listOfIconsForBottomNavigationBar = [
-//     Icon(Icons.directions_car),
-//     Icon(Icons.directions_walk),
-//     Icon(Icons.directions_bike),
-//      Icon(Icons.directions_bike),
-//   ];
-
-
-//   //2
-//   static List _listOfIconsForTabBar = [
-//     Icon(Icons.directions_boat),
-//     Icon(Icons.directions_bus),
-//     Icon(Icons.directions_railway),
-//      Icon(Icons.directions_railway),
-//   ];
-
-
-//   //3
-//   void _onItemTappedForBottomNavigationBar(int index) {
-//     setState(() {
-//       _selectedIndexForBottomNavigationBar = index;
-//       _selectedIndexForTabBar = 0;
-//     });
-//   }
-
-
-//   //4
-//   void _onItemTappedForTabBar(int index) {
-//     setState(() {
-//       _selectedIndexForTabBar = index+1;
-//       _selectedIndexForBottomNavigationBar = 0;
-//     });
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-
-
-//     //5
-//     final tabBar = new TabBar(labelColor: Colors.blue,
-//       onTap: _onItemTappedForTabBar,
-//       tabs: [
-//         new Tab(
-//           text: "BOAT",
-//         ),
-//         new Tab(
-//           text: "BUS",
-//         ),
-//         new Tab(
-//           text: "RAILWAY",
-//         ),
-//          new Tab(
-//           text: "RAILWAY",
-//         ),
-//       ],
-//     );
-
-
-
-//     //6
-//     return new DefaultTabController(length: 4, child: new Scaffold(
-//       appBar: AppBar(bottom: tabBar,backgroundColor: Colors.white, title: Text('Tabs Demo')),
-
-//       //7
-//       body: Center(child:_selectedIndexForTabBar == 0 ?
-//       _listOfIconsForBottomNavigationBar.elementAt(_selectedIndexForBottomNavigationBar):
-//       _listOfIconsForTabBar.elementAt(_selectedIndexForTabBar - 1)),
-
-//       bottomNavigationBar: BottomNavigationBar(
-//         type: BottomNavigationBarType.fixed,
-//         onTap: _onItemTappedForBottomNavigationBar, // this will be set when a new tab is tapped
-//         items: [
-//           BottomNavigationBarItem(
-//               icon: new Icon(Icons.home_max_outlined),),
-//           BottomNavigationBarItem(
-//               icon: new Icon(Icons.directions_walk),label:'WALK'),
-//           BottomNavigationBarItem(
-//               icon: Icon(Icons.directions_bike),label:'BIKE'),
-//                 BottomNavigationBarItem(
-//               icon: Icon(Icons.directions_bike),label:'BIKE'),
-
-//         ],
-//         currentIndex: _selectedIndexForBottomNavigationBar,
-//       ),
-//     ));
-//   }
-
-// }

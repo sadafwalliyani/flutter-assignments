@@ -9,16 +9,16 @@ import 'package:practiceoftest/Widgets/productinfo.dart';
 import 'package:practiceoftest/Widgets/textContent.dart';
 import 'package:practiceoftest/Widgets/toppostswidget.dart';
 import 'package:practiceoftest/bottomnavigation/bottomnavigation.dart';
-
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class bmHome extends StatefulWidget {
+  const bmHome({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<bmHome> createState() => _bmHomeState();
 }
 
-class _HomeState extends State<Home> {
+class _bmHomeState extends State<bmHome> {
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
      // bottomNavigationBar: BottomComtroller(),

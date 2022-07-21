@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:practiceoftest/Pages/Tabbar.dart';
 import 'package:practiceoftest/Pages/adddata.dart';
+import 'package:practiceoftest/Pages/card.dart';
 import 'package:practiceoftest/Pages/children.dart';
 import 'package:practiceoftest/Pages/measurement.dart';
 import 'package:practiceoftest/bottomnavigation/bnbar.dart';
@@ -31,9 +32,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home:
-      SplashScreen(),
-   //Home1()
+  //MyHomePage()
+//TabBarrr(),
+    SplashScreen(),
+  
    //radddata()
+   
+   
     );
   }
 }

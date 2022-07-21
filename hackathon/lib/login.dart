@@ -2,6 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:practiceoftest/Pages/Tabbar.dart';
+import 'package:practiceoftest/bottomnavigation/bnbar.dart';
 
 
 class Login extends StatefulWidget {
@@ -118,7 +119,7 @@ signIntoApp() async {
                           onPressed: ()async {
 signIntoApp();
            Navigator.pushReplacement<void,void>(context,
-                        MaterialPageRoute<void>(builder: (context) => TabBarrr()));
+                        MaterialPageRoute<void>(builder: (context) => bottomNhome()));
 
                           },
                           shape: RoundedRectangleBorder(
@@ -126,10 +127,6 @@ signIntoApp();
                           padding: EdgeInsets.all(0.0),
                           child: Ink(
       decoration: BoxDecoration(
-        // gradient: LinearGradient(
-        //   colors: [Color(0xffFE2550), Color(0xff000000)],
-        // begin: Alignment.centerLeft,
-        //end: Alignment.centerRight,
         color: Color(0xffFE2550),
         borderRadius: BorderRadius.circular(5),
       ),
@@ -154,11 +151,7 @@ signIntoApp();
                          SizedBox(height: 10,),
                                            Ink(
                             decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  colors: [Color(0xffFE2550), Color(0xff000000)],
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight,
-                                ),
+        color: Color(0xffFE2550),
                                 borderRadius: BorderRadius.circular(10.0)),
                             child: Container(
                               constraints:
