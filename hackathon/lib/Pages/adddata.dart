@@ -15,10 +15,13 @@ class _adddataState extends State<adddata> {
 var data =FirebaseFirestore.instance.collection('data');
 Future<void> addProducts() {
 // Call the Product's CollectionReference to add a new Product
-return data.doc("Products")
-.set({
+return 
+data.doc().set({
+  
 
-'productsList': ["Agbada","Ankara","T-Shirt","Danshiki"], // John Doe
+'Names of Products': "Agbada",
+
+//["Agbada","Ankara","T-Shirt","Danshiki"], // John Doe
 
 
 })

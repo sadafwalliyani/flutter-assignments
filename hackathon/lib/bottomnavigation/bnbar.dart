@@ -40,8 +40,8 @@ class _HomeState extends State<Home1> {
                         currentTab = 0;
                       });
                     },
-                    child: Icon(Icons.home,
-                        color: currentTab == 0 ? Colors.white : Colors.black)),
+                    child: Icon(Icons.home_outlined,
+                        color: currentTab == 0 ? Colors.pink : Colors.grey)),
                 MaterialButton(
                     minWidth: 60,
                     onPressed: () {
@@ -51,7 +51,7 @@ class _HomeState extends State<Home1> {
                       });
                     },
                     child: Icon(Icons.favorite,
-                        color: currentTab == 1 ? Colors.white : Colors.black)),
+                        color: currentTab == 1 ? Colors.pink : Colors.grey)),
                 MaterialButton(
                     minWidth: 60,
                     onPressed: () {
@@ -61,7 +61,7 @@ class _HomeState extends State<Home1> {
                       });
                     },
                     child: Icon(Icons.search,
-                        color: currentTab == 2 ? Colors.white : Colors.black)),
+                        color: currentTab == 2 ? Colors.pink : Colors.grey)),
                 MaterialButton(
                     minWidth: 60,
                     onPressed: () {
@@ -71,7 +71,7 @@ class _HomeState extends State<Home1> {
                       });
                     },
                     child: Icon(Icons.person,
-                        color: currentTab == 3 ? Colors.white : Colors.black)),
+                        color: currentTab == 3 ? Colors.pink : Colors.grey)),
               ]),
         ),
       ),
