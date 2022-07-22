@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:practiceoftest/Pages/measurement2.dart';
 import 'package:practiceoftest/Widgets/buttonwidget.dart';
 import 'package:practiceoftest/Widgets/productinfo.dart';
 import 'package:practiceoftest/Widgets/textContent.dart';
+import 'package:practiceoftest/productScreens/measurement.dart';
 
 
 class men extends StatefulWidget {

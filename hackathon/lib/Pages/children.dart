@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Pages/measurement.dart';
+
 import 'package:practiceoftest/Widgets/buttonwidget.dart';
 import 'package:practiceoftest/Widgets/gridview.dart';
 import 'package:practiceoftest/Widgets/pictureslider.dart';
 import 'package:practiceoftest/Widgets/productinfo.dart';
 import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/bottomnavigation/bottomnavigation.dart';
+import 'package:practiceoftest/productScreens/measurement.dart';
 
 class children extends StatefulWidget {
   const children({Key? key}) : super(key: key);

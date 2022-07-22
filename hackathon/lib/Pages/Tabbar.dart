@@ -3,7 +3,6 @@ import 'package:practiceoftest/Pages/children.dart';
 import 'package:practiceoftest/Pages/men.dart';
 import 'package:practiceoftest/Pages/women.dart';
 import 'package:practiceoftest/Widgets/searchbarWidget.dart';
-import 'package:practiceoftest/bottomnavigation/bottomnavigation.dart';
 
 class TabBarrr extends StatefulWidget {
   const TabBarrr({Key? key}) : super(key: key);

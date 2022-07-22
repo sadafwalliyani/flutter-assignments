@@ -3,6 +3,7 @@ import 'package:practiceoftest/Pages/Tabbar.dart';
 import 'package:practiceoftest/bottomnavigation/cart.dart';
 import 'package:practiceoftest/bottomnavigation/home.dart';
 import 'package:practiceoftest/bottomnavigation/setting.dart';
+import 'package:practiceoftest/productScreens/measurement.dart';
 
 
 class bottomNhome extends StatefulWidget {
@@ -57,7 +58,7 @@ class _HomeState extends State<bottomNhome> {
                     minWidth: 60,
                     onPressed: () {
                       setState(() {
-                        currentScreen = const cart();
+                        currentScreen = const measurement();
                         currentTab = 2;
                       });
                     },
@@ -67,7 +68,7 @@ class _HomeState extends State<bottomNhome> {
                     minWidth: 60,
                     onPressed: () {
                       setState(() {
-                        currentScreen = const Setting();
+                        currentScreen = const cart();
                         currentTab = 3;
                       });
                     },

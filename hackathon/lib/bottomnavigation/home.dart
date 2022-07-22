@@ -8,7 +8,6 @@ import 'package:practiceoftest/Widgets/buttonwidget.dart';
 import 'package:practiceoftest/Widgets/productinfo.dart';
 import 'package:practiceoftest/Widgets/textContent.dart';
 import 'package:practiceoftest/Widgets/toppostswidget.dart';
-import 'package:practiceoftest/bottomnavigation/bottomnavigation.dart';
 class bmHome extends StatefulWidget {
   const bmHome({Key? key}) : super(key: key);
 

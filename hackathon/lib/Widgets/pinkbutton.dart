@@ -10,10 +10,6 @@ Widget pinkbtn(txt,width) {
     padding: EdgeInsets.all(0.0),
     child: Ink(
       decoration: BoxDecoration(
-        // gradient: LinearGradient(
-        //   colors: [Color(0xffFE2550), Color(0xff000000)],
-        // begin: Alignment.centerLeft,
-        //end: Alignment.centerRight,
         color: Color(0xffFE2550),
         borderRadius: BorderRadius.circular(5),
       ),
