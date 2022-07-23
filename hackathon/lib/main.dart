@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home:
   //MyHomePage()
-bottomNhome(),
-    //SplashScreen(),
+//bottomNhome(),
+  SplashScreen(),
    //measurement(),
    //radddata()
   // specifymaterial()
