@@ -11,30 +11,37 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  List<String> getUsername = [];
+  TextEditingController names = TextEditingController();
+  addValue() {
+    setState(() {
+      getUsername.add(names.text);
+      names.clear();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: FutureBuilder(future: getUser(),
-      builder: (context, AsyncSnapshot snapshot){
-        if(snapshot.hasData){
-          return const CircularProgressIndicator();
-        }
-        else{
-          return ListView.builder(
-            itemCount: snapshot.data.length,
-            itemBuilder: (context,index){
-              return 
-            //   ListTile(title: Text(snapshot.data[index].a),
-            // subtitle: Text(snapshot.data[index].d),);
-              ListTile(
-                title:  Text(snapshot.data[index].name),
+      body: FutureBuilder(
+          future: getUser(),
+          builder: (context, AsyncSnapshot snapshot) {
+            if (!snapshot.hasData) {
+              return const CircularProgressIndicator();
+            } else {
+              return ListView.builder(
+                itemCount: snapshot.data.length,
+                itemBuilder: (context, index) {
+                  return
+                      //   ListTile(title: Text(snapshot.data[index].a),
+                      // subtitle: Text(snapshot.data[index].d),);
+                      ListTile(
+                    title: Text(snapshot.data[index].name),
+                  );
+                },
               );
-            },
-          );
-        }
-      }),
-      
+            }
+          }),
     );
   }
 }
