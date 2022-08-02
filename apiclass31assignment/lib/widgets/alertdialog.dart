@@ -1,27 +1,15 @@
-import 'dart:convert';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:practiceoftest/services/user_service.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class alertdialog extends StatelessWidget {
+  const alertdialog({Key? key}) : super(key: key);
 
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: FutureBuilder(
-          future: getUsers(),
-          builder: (context, AsyncSnapshot snapshot) {
-            if (!snapshot.hasData) {
-              return const CircularProgressIndicator();
-            } else {
-              return ListView.builder(
+    return (
+    ListView.builder(
                 itemCount: snapshot.data.length,
                 itemBuilder: (context, index) {
                   return 
@@ -61,9 +49,7 @@ class _HomeState extends State<Home> {
                     ),
                   );
                 },
-              );
-            }
-          }),
+              )
     );
   }
 }

@@ -47,29 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDGXQZh24VNGg-1eronFsmvi5hhKwb70P4',
-    appId: '1:918387279717:web:eacedbc4a430fa43fe438c',
-    messagingSenderId: '918387279717',
-    projectId: 'signinsignout',
-    authDomain: 'signinsignout.firebaseapp.com',
-    storageBucket: 'signinsignout.appspot.com',
+    apiKey: 'AIzaSyAt0-kqVSI5RCeIjsFkoHdCG_QfiehRJ4g',
+    appId: '1:418644416809:web:9cd760ecbf55512621ff38',
+    messagingSenderId: '418644416809',
+    projectId: 'hack17thjuly',
+    authDomain: 'hack17thjuly.firebaseapp.com',
+    storageBucket: 'hack17thjuly.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA5-HDQLYCpKAhhAPkIL1lmaLxslnXxe84',
-    appId: '1:918387279717:android:9d8ea121e9fcf32afe438c',
-    messagingSenderId: '918387279717',
-    projectId: 'signinsignout',
-    storageBucket: 'signinsignout.appspot.com',
+    apiKey: 'AIzaSyCN7yygjLYXHzRA7QgJ23wXPQ7Spi1PunU',
+    appId: '1:418644416809:android:778e9ada143ed0e421ff38',
+    messagingSenderId: '418644416809',
+    projectId: 'hack17thjuly',
+    storageBucket: 'hack17thjuly.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBjX5taRIEwMdxi0TKk0_lT3t32LhjBLbI',
-    appId: '1:918387279717:ios:6b63b206a6833b38fe438c',
-    messagingSenderId: '918387279717',
-    projectId: 'signinsignout',
-    storageBucket: 'signinsignout.appspot.com',
-    iosClientId: '918387279717-16595tjpfmgc6ot9vvu7sbiamlc62i6b.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBWT8wP_Siw5wopoW0BFDDf8ZpQ4ZB2hcs',
+    appId: '1:418644416809:ios:e7e039a18efc06c621ff38',
+    messagingSenderId: '418644416809',
+    projectId: 'hack17thjuly',
+    storageBucket: 'hack17thjuly.appspot.com',
+    androidClientId: '418644416809-nub4f9lq78aoer3qipng73n5gi083jmh.apps.googleusercontent.com',
+    iosClientId: '418644416809-7f2008mgce5p7t9hv85hf0mb465ddp4n.apps.googleusercontent.com',
     iosBundleId: 'com.example.loginScreen',
   );
 }

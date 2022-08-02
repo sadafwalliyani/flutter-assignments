@@ -66,6 +66,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '418644416809',
     projectId: 'hack17thjuly',
     storageBucket: 'hack17thjuly.appspot.com',
+    androidClientId: '418644416809-nub4f9lq78aoer3qipng73n5gi083jmh.apps.googleusercontent.com',
     iosClientId: '418644416809-rm278k5npq3qille6hf03v7834ja6d9d.apps.googleusercontent.com',
     iosBundleId: 'com.example.practiceoftest',
   );
@@ -76,6 +77,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '418644416809',
     projectId: 'hack17thjuly',
     storageBucket: 'hack17thjuly.appspot.com',
+    androidClientId: '418644416809-nub4f9lq78aoer3qipng73n5gi083jmh.apps.googleusercontent.com',
     iosClientId: '418644416809-rm278k5npq3qille6hf03v7834ja6d9d.apps.googleusercontent.com',
     iosBundleId: 'com.example.practiceoftest',
   );
