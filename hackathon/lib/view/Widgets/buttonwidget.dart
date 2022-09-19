@@ -10,7 +10,7 @@ Widget buttonwidget(){
   Row(
     // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
-  RaisedButton(
+ElevatedButton(
     
                                 onPressed: (){
     
@@ -18,9 +18,10 @@ Widget buttonwidget(){
             //               MaterialPageRoute<void>(builder: (context) => TabBarrr()));
     
                                 },
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(80.0)),
-                                padding: EdgeInsets.all(0.0),
+                                 style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
                                 child: Ink(
       decoration: BoxDecoration(
         // gradient: LinearGradient(
@@ -47,16 +48,17 @@ Widget buttonwidget(){
                                 ),
                               ),
                               SizedBox(width: 10,),
-                                                       RaisedButton(
+                                                       ElevatedButton(
                                 onPressed: (){
     
             //  Navigator.pushReplacement<void,void>(context,
             //               MaterialPageRoute<void>(builder: (context) => TabBarrr()));
     
                                 },
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(80.0)),
-                                padding: EdgeInsets.all(0.0),
+                                 style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
                                 child: Ink(
       decoration: BoxDecoration(
         // gradient: LinearGradient(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:practiceoftest/productScreens/paymentdone.dart';
+
+import '../productScreens/paymentdone.dart';
 
 class Setting extends StatefulWidget {
   const Setting({Key? key}) : super(key: key);

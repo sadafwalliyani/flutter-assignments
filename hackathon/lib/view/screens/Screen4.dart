@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:practiceoftest/Widgets/screen1text.dart';
+import 'package:practiceoftest/view/Widgets/screen1text.dart';
 import 'package:practiceoftest/login.dart';
 import 'package:practiceoftest/registration.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

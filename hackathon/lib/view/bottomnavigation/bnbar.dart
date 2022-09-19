@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:practiceoftest/Pages/Tabbar.dart';
-import 'package:practiceoftest/bottomnavigation/cart.dart';
-import 'package:practiceoftest/bottomnavigation/home.dart';
-import 'package:practiceoftest/bottomnavigation/setting.dart';
-import 'package:practiceoftest/productScreens/measurement.dart';
+
+import '../Pages/Tabbar.dart';
+import '../productScreens/measurement.dart';
+import 'cart.dart';
+import 'home.dart';
 
 
 class bottomNhome extends StatefulWidget {

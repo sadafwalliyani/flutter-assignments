@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practiceoftest/Pages/children.dart';
-import 'package:practiceoftest/Pages/men.dart';
-import 'package:practiceoftest/Pages/women.dart';
-import 'package:practiceoftest/Widgets/searchbarWidget.dart';
+import 'package:practiceoftest/view/Pages/children.dart';
+import 'package:practiceoftest/view/Pages/men.dart';
+import 'package:practiceoftest/view/Pages/women.dart';
+import 'package:practiceoftest/view/Widgets/searchbarWidget.dart';
 
 class TabBarrr extends StatefulWidget {
   const TabBarrr({Key? key}) : super(key: key);

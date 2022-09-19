@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Widgets/buttonwidget.dart';
-import 'package:practiceoftest/Widgets/gridview.dart';
-import 'package:practiceoftest/Widgets/productinfo.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/bottomnavigation/home.dart';
-import 'package:practiceoftest/productScreens/measurement.dart';
+import 'package:practiceoftest/view/Widgets/buttonwidget.dart';
+import 'package:practiceoftest/view/Widgets/gridview.dart';
+import 'package:practiceoftest/view/Widgets/productinfo.dart';
+import 'package:practiceoftest/view/Widgets/textContent.dart';
+import 'package:practiceoftest/view/bottomnavigation/home.dart';
+import 'package:practiceoftest/view/productScreens/measurement.dart';
 
 class women extends StatefulWidget {
   const women({Key? key}) : super(key: key);

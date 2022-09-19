@@ -1,30 +1,24 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'package:practiceoftest/Widgets/buttonwidget.dart';
-import 'package:practiceoftest/Widgets/graytxtwiget.dart';
-import 'package:practiceoftest/Widgets/meacontainer.dart';
-import 'package:practiceoftest/Widgets/pinkbutton.dart';
-import 'package:practiceoftest/Widgets/paynowbutton.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/bottomnavigation/bnbar.dart';
-import 'package:practiceoftest/productScreens/measurement2.dart';
-import 'package:practiceoftest/productScreens/specifymaterial.dart';
+import 'package:practiceoftest/view/productScreens/specifymaterial.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class measurement extends StatefulWidget {
-  const measurement({Key? key}) : super(key: key);
+import '../Widgets/graytxtwiget.dart';
+import '../Widgets/meacontainer.dart';
+import '../Widgets/pinkbutton.dart';
+import '../bottomnavigation/bnbar.dart';
+import 'measurement.dart';
+
+class measurement2 extends StatefulWidget {
+  const measurement2({Key? key}) : super(key: key);
 
   @override
-  State<measurement> createState() => _measurementState();
+  State<measurement2> createState() => _measurement2State();
 }
 
-class _measurementState extends State<measurement> {
+class _measurement2State extends State<measurement2> {
   final _controller = PageController(initialPage: 0);
 
   @override
@@ -39,8 +33,9 @@ class _measurementState extends State<measurement> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
-                  icon: ImageIcon(AssetImage('assests/backarrow.png',)),
-                  iconSize:50,
+                  icon: ImageIcon(AssetImage('assests/backarrow.png',
+                  )),
+                  iconSize: 50,
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => bottomNhome()));
@@ -75,7 +70,7 @@ class _measurementState extends State<measurement> {
                   image: AssetImage(
                     'assests/screen4.png',
                   ),
-                  height: 300,
+                  height: 400,
                   width: 500,
                 ),
                 SmoothPageIndicator(
@@ -131,88 +126,116 @@ class _measurementState extends State<measurement> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-//                     new GestureDetector(
-//   onTap: () {
-//     Navigator.push(context ,     MaterialPageRoute(builder: (context) => measurement()));
-//   },
-//   child: 
-//   graytxt("INFO")
-// ),
-      graytxt("INFO"),                    
-      new GestureDetector(
+                                      new GestureDetector(
   onTap: () {
-    Navigator.push(context ,     MaterialPageRoute(builder: (context) => measurement2()));
+    Navigator.push(context ,     MaterialPageRoute(builder: (context) => measurement()));
   },
   child: 
-  graytxt("MEASUREMENT")
+  graytxt("INFO")
 ),
-     
+   
+                    Text(
+                      "MEASUREMENTS",
+                      style: GoogleFonts.raleway(
+                        color: Color.fromARGB(255, 37, 36, 37),
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     
                   ],
                 ),
-                 Row(
-                  children: [
-                 Image(
-                  image: AssetImage(
-                    'assests/Line.png',
-                  ),
-                  height:20,
-                  width: 200,
-                ),
-                  ],
-                ),
-               
+                 SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  
+                   child: Row(
 
+                    children: [
+                      SizedBox(width: 200,),
+                   Image(
+                    image: AssetImage(
+                      'assests/Line.png',
+                    ),
+                    height:20,
+                    width: 170,
+                                 ),
+                    ],),
+                 ),
+                
                 SizedBox(
                   height: 15,
                 ),
-         
-                
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    graytxt("MATERIALS"),
+                    Column(
+                      children: [
+                        graytxt("WAIST"),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        meacontainer("24"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        graytxt("LENGTH"),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        meacontainer("34"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        graytxt("BREATH"),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        meacontainer("76"),
+                      ],
+                    ),
                   ],
                 ),
-                   
-                SizedBox(   height: 10,  ),
-               Column(
-                  children: [
-                   Text("AS SEEN IN REDBOOK! You'll be primed and ready in the Perfect Situation Purple Long Sleeve Shift Dress when everything starts falling into place! This woven poly dress has a casual shift shape, accented by a rounded neckline.",
-                   textAlign: TextAlign.justify,
-    maxLines: 5,
-    style: GoogleFonts.raleway(
-      color: Color.fromARGB(255, 170, 156, 156),
-      fontSize: 15,
-    
-      fontWeight: FontWeight.bold,
-    ),),
-                  ],
+                SizedBox(
+                  height: 10,
                 ),
-                SizedBox(   height: 10,  ),
+
                 Row(
                   children: [
-                   
-                    graytxt("WASH INSTRUCTIONS"),
+                    pinkbtn("Yes", 100),
+                    SizedBox(
+                      width: 70,
+                    ),
+                    graytxt("No"),
                   ],
                 ),
 
+                Column(
+                  children: [
+                    Image(
+                      image: AssetImage(
+                        'assests/group2.png',
+                      ),
+                      height: 100,
+                      width: 300,
+                    ),
+                    graytxt("Do you want to use this material"),
+                  ],
+                ),
                   SizedBox(
                   height: 8,
                 ),
-// new GestureDetector(
-//   onTap: () {
-//     Navigator.push(context ,     MaterialPageRoute(builder: (context) => specifymaterial()));
-//   },
-//   child: 
-//  pinkbtn("Add to Bag", 200,),
-// ),
-RaisedButton(
+
+             ElevatedButton(
     onPressed: () {
        Navigator.pushReplacement<void,void>(context,
                     MaterialPageRoute<void>(builder: (context) => specifymaterial()));
     },
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
-    padding: EdgeInsets.all(0.0),
+     style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
     child: Ink(
       decoration: BoxDecoration(
         color: Color(0xffFE2550),
@@ -233,13 +256,9 @@ RaisedButton(
       ),
     ),
   )
-  ]
-  )
-                
-              ),
-            )
-            ),
-      );
-    
+              ]),
+            )),
+      ),
+    );
   }
 }

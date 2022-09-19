@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Pages/children.dart';
 
 Widget paynowwidget(){
   return 
@@ -25,16 +24,17 @@ Row(
                       fontWeight: FontWeight.bold,
                     ),
        ),
-       RaisedButton(
+       ElevatedButton(
                                   onPressed: (){
       
               //  Navigator.pushReplacement<void,void>(context,
               //               MaterialPageRoute<void>(builder: (context) => TabBarrr()));
       
                                   },
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(80.0)),
-                                  padding: EdgeInsets.all(0.0),
+                                   style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
                                   child: Ink(
                                     decoration: BoxDecoration(
                                         // gradient: LinearGradient(

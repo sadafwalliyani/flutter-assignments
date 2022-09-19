@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Widgets/graytxtwiget.dart';
-import 'package:practiceoftest/Widgets/pinkbutton.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/bottomnavigation/bnbar.dart';
+
+import '../Widgets/graytxtwiget.dart';
+import '../bottomnavigation/bnbar.dart';
 
 class paymentdone extends StatefulWidget {
   const paymentdone({Key? key}) : super(key: key);
@@ -48,13 +47,15 @@ class _paymentdoneState extends State<paymentdone> {
          graytxt("Thanks!!!"),
          SizedBox(height: 50,),
         // pinkbtn("Continue Shopping",250,),
-        RaisedButton(
+      ElevatedButton(
     onPressed: () {
        Navigator.pushReplacement<void,void>(context,
                     MaterialPageRoute<void>(builder: (context) => bottomNhome()));
     },
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
-    padding: EdgeInsets.all(0.0),
+     style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
     child: Ink(
       decoration: BoxDecoration(
         color: Color(0xffFE2550),

@@ -3,11 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:practiceoftest/Widgets/productinfo.dart';
-import 'package:practiceoftest/Widgets/screen1text.dart';
-import 'package:practiceoftest/screens/screen2.dart';
-import 'package:practiceoftest/screens/screen3.dart';
+import 'package:practiceoftest/view/screens/screen2.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../Widgets/screen1text.dart';
 
 class Screen1 extends StatefulWidget {
   const Screen1({Key? key}) : super(key: key);

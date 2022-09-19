@@ -5,17 +5,12 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'package:practiceoftest/Widgets/buttonwidget.dart';
-import 'package:practiceoftest/Widgets/graytxtwiget.dart';
-import 'package:practiceoftest/Widgets/listview.dart';
-import 'package:practiceoftest/Widgets/meacontainer.dart';
-import 'package:practiceoftest/Widgets/pinkbutton.dart';
-import 'package:practiceoftest/Widgets/paynowbutton.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/bottomnavigation/bnbar.dart';
-import 'package:practiceoftest/productScreens/paymentdone.dart';
+import 'package:practiceoftest/view/productScreens/paymentdone.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../Widgets/graytxtwiget.dart';
+import '../Widgets/listview.dart';
+import '../bottomnavigation/bnbar.dart';
 
 class specifymaterial extends StatefulWidget {
   const specifymaterial({Key? key}) : super(key: key);
@@ -122,13 +117,15 @@ SizedBox(height: 10,),
             ],
           ),
           SizedBox(height: 15,),
-       RaisedButton(
+       ElevatedButton(
     onPressed: () {
        Navigator.pushReplacement<void,void>(context,
                     MaterialPageRoute<void>(builder: (context) => paymentdone()));
     },
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
-    padding: EdgeInsets.all(0.0),
+     style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
     child: Ink(
       decoration: BoxDecoration(
           color: Color(0xffFE2550),

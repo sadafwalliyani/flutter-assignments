@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Pages/Tabbar.dart';
-import 'package:practiceoftest/Pages/women.dart';
-import 'package:practiceoftest/Widgets/buttonwidget.dart';
-import 'package:practiceoftest/Widgets/productinfo.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/Widgets/toppostswidget.dart';
+
+import '../Widgets/toppostswidget.dart';
+
 class bmHome extends StatefulWidget {
   const bmHome({Key? key}) : super(key: key);
 

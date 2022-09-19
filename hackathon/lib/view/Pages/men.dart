@@ -1,23 +1,67 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:practiceoftest/view/Widgets/buttonwidget.dart';
+import 'package:practiceoftest/view/Widgets/productinfo.dart';
+import 'package:practiceoftest/view/Widgets/textContent.dart';
+import 'package:practiceoftest/view/productScreens/measurement.dart';
 
-import 'package:practiceoftest/Widgets/buttonwidget.dart';
-import 'package:practiceoftest/Widgets/gridview.dart';
-import 'package:practiceoftest/Widgets/pictureslider.dart';
-import 'package:practiceoftest/Widgets/productinfo.dart';
-import 'package:practiceoftest/Widgets/textContent.dart';
-import 'package:practiceoftest/productScreens/measurement.dart';
 
-class children extends StatefulWidget {
-  const children({Key? key}) : super(key: key);
+class men extends StatefulWidget {
+  const men({Key? key}) : super(key: key);
 
   @override
-  State<children> createState() => _childrenState();
+  State<men> createState() => _menState();
 }
 
-class _childrenState extends State<children> {
+class _menState extends State<men> {
+  CollectionReference data = FirebaseFirestore.instance.collection('data');
+  Future<void> deleteUser(docId) {
+    return data
+        .doc(docId)
+        .delete()
+        .then((value) => print("User Deleted"))
+        .catchError((error) => print("Failed to delete user: $error"));
+  }
+
   @override
   Widget build(BuildContext context) {
+
+//     return Scaffold(
+//       body: 
+      
+//       Center(
+//         child: FutureBuilder<QuerySnapshot>(
+//           future: data.get(),
+//           builder: (context, snapshot) {
+//             if (snapshot.hasData) {
+//               return ListView(
+//                   children:
+//                       snapshot.data!.docs.map((DocumentSnapshot document) {
+//                 Map<String, dynamic> abc =
+//                     document.data()! as Map<String, dynamic>;
+//                 return ListTile(
+//                   title: Text(abc['productsList'].toString()),
+                
+//                   // trailing: 
+//                   // IconButton(
+//                   //   onPressed: () {
+//                   //     setState(() {
+//                   //       deleteUser(document.id);
+//                   //     });
+//                   //   },
+//                   //   icon: Icon(Icons.delete),
+//                   // ),
+//                 );
+//               }).toList());
+//             } else {
+//               return CircularProgressIndicator();
+//             }
+//           },
+//         ),
+//       ),
+//     );
+//   }
+// }
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(8.0),

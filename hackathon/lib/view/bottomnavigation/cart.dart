@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceoftest/Widgets/cartwidget.dart';
-import 'package:practiceoftest/Widgets/paynowbutton.dart';
-import 'package:practiceoftest/bottomnavigation/bnbar.dart';
+
+import '../Widgets/cartwidget.dart';
+import '../Widgets/paynowbutton.dart';
+import 'bnbar.dart';
 
 class cart extends StatefulWidget {
   const cart({Key? key}) : super(key: key);

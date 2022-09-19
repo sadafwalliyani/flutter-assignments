@@ -136,7 +136,7 @@ class _registrationState extends State<registration> {
                     SizedBox(
                       height: 10,
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () async {
                         signUpFunction();
                         Navigator.push(
@@ -144,9 +144,11 @@ class _registrationState extends State<registration> {
                             MaterialPageRoute(
                                 builder: (BuildContext context) => Login()));
                       },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(80.0)),
-                      padding: EdgeInsets.all(0.0),
+                       style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
+                  ),),
+                    
                       child: Ink(
       decoration: BoxDecoration(
         // gradient: LinearGradient(
