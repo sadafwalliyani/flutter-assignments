@@ -43,7 +43,7 @@ class _TabBarrrState extends State<TabBarrr>
           Padding(
             padding: EdgeInsets.all(10),
             child: Container(
-                width: 320,
+                width: 300,
                 child: TextField(
                   // controller: controller,
          

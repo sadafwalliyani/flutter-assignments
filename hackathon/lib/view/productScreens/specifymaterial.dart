@@ -122,10 +122,11 @@ SizedBox(height: 10,),
        Navigator.pushReplacement<void,void>(context,
                     MaterialPageRoute<void>(builder: (context) => paymentdone()));
     },
-     style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
-                  ),),
+style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xffFE2550),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          )),          
     child: Ink(
       decoration: BoxDecoration(
           color: Color(0xffFE2550),

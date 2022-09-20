@@ -144,12 +144,13 @@ class _registrationState extends State<registration> {
                             MaterialPageRoute(
                                 builder: (BuildContext context) => Login()));
                       },
-                       style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(borderRadius:BorderRadius.circular(80.0)),
-                  ),),
-                    
-                      child: Ink(
+
+style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xffFE2550),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          )),          
+                                                child: Ink(
       decoration: BoxDecoration(
         // gradient: LinearGradient(
         //   colors: [Color(0xffFE2550), Color(0xff000000)],
