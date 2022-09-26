@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:practiceoftest/firebase_options.dart';
 import 'package:practiceoftest/login.dart';
 import 'package:practiceoftest/splashScreen.dart';
+import 'package:practiceoftest/view/screens/screen1.dart';
 
 
 void main() async {
@@ -23,13 +24,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home:
-  //MyHomePage()
-//bottomNhome(),
   SplashScreen(),
-   //measurement(),
-   //radddata()
-  // specifymaterial()
-  //  cart()
+ //  Screen1(),
     );
   }
 }
